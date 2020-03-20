@@ -98,5 +98,5 @@ if(!file.exists("cache/cps_co.Rdata")){
     ungroup()
   
   
-  save(full_long,file="cache/cps_co.Rdata")
+  save(full_long,hh_long,file="cache/cps_co.Rdata")
 }

@@ -1,0 +1,281 @@
+county,state_name,name
+01097,Alabama,Mobile
+01081,Alabama,Lee
+01003,Alabama,Baldwin
+04019,Arizona,Pima
+04013,Arizona,Maricopa
+04021,Arizona,Pinal
+04025,Arizona,Yavapai
+04027,Arizona,Yuma
+06099,California,Stanislaus
+06111,California,Ventura
+06107,California,Tulare
+06053,California,Monterey
+06095,California,Solano
+06083,California,Santa Barbara
+06067,California,Sacramento
+06081,California,San Mateo
+06029,California,Kern
+06001,California,Alameda
+06077,California,San Joaquin
+06059,California,Orange
+06075,California,San Francisco
+06097,California,Sonoma
+06073,California,San Diego
+06019,California,Fresno
+06037,California,Los Angeles
+06087,California,Santa Cruz
+06061,California,Placer
+06113,California,Yolo
+06017,California,El Dorado
+06089,California,Shasta
+06031,California,Kings
+06007,California,Butte
+06079,California,San Luis Obispo
+08031,Colorado,Denver
+08059,Colorado,Jefferson
+08069,Colorado,Larimer
+08013,Colorado,Boulder
+08123,Colorado,Weld
+09001,Connecticut,Fairfield
+09009,Connecticut,New Haven
+09015,Connecticut,Windham
+09005,Connecticut,Litchfield
+10005,Delaware,Sussex
+10001,Delaware,Kent
+10003,Delaware,New Castle
+11001,District of Columbia,District of Columbia
+12011,Florida,Broward
+12086,Florida,Miami-Dade
+12103,Florida,Pinellas
+12009,Florida,Brevard
+12111,Florida,St. Lucie
+12057,Florida,Hillsborough
+12071,Florida,Lee
+12095,Florida,Orange
+12099,Florida,Palm Beach
+12105,Florida,Polk
+12033,Florida,Escambia
+12053,Florida,Hernando
+12069,Florida,Lake
+12113,Florida,Santa Rosa
+12019,Florida,Clay
+12085,Florida,Martin
+12101,Florida,Pasco
+12109,Florida,St. Johns
+12083,Florida,Marion
+12021,Florida,Collier
+12005,Florida,Bay
+13057,Georgia,Cherokee
+13223,Georgia,Paulding
+13045,Georgia,Carroll
+13113,Georgia,Fayette
+13097,Georgia,Douglas
+13151,Georgia,Henry
+13077,Georgia,Coweta
+13015,Georgia,Bartow
+13117,Georgia,Forsyth
+13063,Georgia,Clayton
+13135,Georgia,Gwinnett
+13139,Georgia,Hall
+15003,Hawaii,Honolulu
+17119,Illinois,Madison
+17111,Illinois,McHenry
+17179,Illinois,Tazewell
+17163,Illinois,St. Clair
+17097,Illinois,Lake
+18141,Indiana,St. Joseph
+18019,Indiana,Clark
+18081,Indiana,Johnson
+18063,Indiana,Hendricks
+18089,Indiana,Lake
+18105,Indiana,Monroe
+18039,Indiana,Elkhart
+19103,Iowa,Johnson
+19163,Iowa,Scott
+19113,Iowa,Linn
+20173,Kansas,Sedgwick
+20091,Kansas,Johnson
+21111,Kentucky,Jefferson
+21067,Kentucky,Fayette
+21117,Kentucky,Kenton
+21015,Kentucky,Boone
+22033,Louisiana,East Baton Rouge
+22051,Louisiana,Jefferson
+22071,Louisiana,Orleans
+22103,Louisiana,St. Tammany
+22005,Louisiana,Ascension
+22063,Louisiana,Livingston
+22073,Louisiana,Ouachita
+23011,Maine,Kennebec
+23019,Maine,Penobscot
+23005,Maine,Cumberland
+23001,Maine,Androscoggin
+24510,Maryland,Baltimore
+24031,Maryland,Montgomery
+24033,Maryland,Prince George's
+24017,Maryland,Charles
+24025,Maryland,Harford
+24003,Maryland,Anne Arundel
+24013,Maryland,Carroll
+24015,Maryland,Cecil
+25027,Massachusetts,Worcester
+25017,Massachusetts,Middlesex
+25013,Massachusetts,Hampden
+25025,Massachusetts,Suffolk
+25023,Massachusetts,Plymouth
+25021,Massachusetts,Norfolk
+25009,Massachusetts,Essex
+25005,Massachusetts,Bristol
+25015,Massachusetts,Hampshire
+25001,Massachusetts,Barnstable
+26081,Michigan,Kent
+26099,Michigan,Macomb
+26125,Michigan,Oakland
+26161,Michigan,Washtenaw
+26163,Michigan,Wayne
+26049,Michigan,Genesee
+26093,Michigan,Livingston
+26005,Michigan,Allegan
+26075,Michigan,Jackson
+26121,Michigan,Muskegon
+26115,Michigan,Monroe
+26145,Michigan,Saginaw
+26025,Michigan,Calhoun
+26021,Michigan,Berrien
+27123,Minnesota,Ramsey
+27171,Minnesota,Wright
+27003,Minnesota,Anoka
+27139,Minnesota,Scott
+27163,Minnesota,Washington
+29071,Missouri,Franklin
+29189,Missouri,St. Louis
+29099,Missouri,Jefferson
+30111,Montana,Yellowstone
+31055,Nebraska,Douglas
+32003,Nevada,Clark
+33011,New Hampshire,Hillsborough
+33017,New Hampshire,Strafford
+33015,New Hampshire,Rockingham
+33013,New Hampshire,Merrimack
+34017,New Jersey,Hudson
+34013,New Jersey,Essex
+34027,New Jersey,Morris
+34023,New Jersey,Middlesex
+34031,New Jersey,Passaic
+34003,New Jersey,Bergen
+34005,New Jersey,Burlington
+34035,New Jersey,Somerset
+34037,New Jersey,Sussex
+34019,New Jersey,Hunterdon
+34039,New Jersey,Union
+34007,New Jersey,Camden
+34021,New Jersey,Mercer
+34011,New Jersey,Cumberland
+35001,New Mexico,Bernalillo
+35049,New Mexico,Santa Fe
+35045,New Mexico,San Juan
+35013,New Mexico,Doña Ana
+36081,New York,Queens
+36067,New York,Onondaga
+36061,New York,New York
+36055,New York,Monroe
+36005,New York,Bronx
+36047,New York,Kings
+36085,New York,Richmond
+36119,New York,Westchester
+36059,New York,Nassau
+36087,New York,Rockland
+36091,New York,Saratoga
+36071,New York,Orange
+36103,New York,Suffolk
+36069,New York,Ontario
+37119,North Carolina,Mecklenburg
+37067,North Carolina,Forsyth
+37179,North Carolina,Union
+37159,North Carolina,Rowan
+37057,North Carolina,Davidson
+37155,North Carolina,Robeson
+37001,North Carolina,Alamance
+37021,North Carolina,Buncombe
+37147,North Carolina,Pitt
+37191,North Carolina,Wayne
+37133,North Carolina,Onslow
+39153,Ohio,Summit
+39095,Ohio,Lucas
+39113,Ohio,Montgomery
+39089,Ohio,Licking
+39085,Ohio,Lake
+39133,Ohio,Portage
+39025,Ohio,Clermont
+39103,Ohio,Medina
+39057,Ohio,Greene
+39109,Ohio,Miami
+41039,Oregon,Lane
+41017,Oregon,Deschutes
+41029,Oregon,Jackson
+42101,Pennsylvania,Philadelphia
+42049,Pennsylvania,Erie
+42003,Pennsylvania,Allegheny
+42017,Pennsylvania,Bucks
+42029,Pennsylvania,Chester
+42091,Pennsylvania,Montgomery
+42129,Pennsylvania,Westmoreland
+42085,Pennsylvania,Mercer
+42019,Pennsylvania,Butler
+42045,Pennsylvania,Delaware
+42125,Pennsylvania,Washington
+42007,Pennsylvania,Beaver
+42107,Pennsylvania,Schuylkill
+42089,Pennsylvania,Monroe
+42011,Pennsylvania,Berks
+42071,Pennsylvania,Lancaster
+42081,Pennsylvania,Lycoming
+42021,Pennsylvania,Cambria
+42133,Pennsylvania,York
+42055,Pennsylvania,Franklin
+42043,Pennsylvania,Dauphin
+45051,South Carolina,Horry
+45041,South Carolina,Florence
+45083,South Carolina,Spartanburg
+45091,South Carolina,York
+47093,Tennessee,Knox
+47165,Tennessee,Sumner
+47009,Tennessee,Blount
+47189,Tennessee,Wilson
+47125,Tennessee,Montgomery
+48309,Texas,McLennan
+48061,Texas,Cameron
+48215,Texas,Hidalgo
+48439,Texas,Tarrant
+48139,Texas,Ellis
+48251,Texas,Johnson
+48181,Texas,Grayson
+48479,Texas,Webb
+48423,Texas,Smith
+48441,Texas,Taylor
+48041,Texas,Brazos
+48485,Texas,Wichita
+48135,Texas,Ector
+49053,Utah,Washington
+51760,Virginia,Richmond
+51710,Virginia,Norfolk
+51810,Virginia,Virginia Beach
+51700,Virginia,Newport News
+51013,Virginia,Arlington
+51153,Virginia,Prince William
+51550,Virginia,Chesapeake
+51087,Virginia,Henrico
+51107,Virginia,Loudoun
+51041,Virginia,Chesterfield
+51179,Virginia,Stafford
+51177,Virginia,Spotsylvania
+53033,Washington,King
+53061,Washington,Snohomish
+53057,Washington,Skagit
+54039,West Virginia,Kanawha
+55059,Wisconsin,Kenosha
+55105,Wisconsin,Rock
+55139,Wisconsin,Winnebago
+55073,Wisconsin,Marathon
+55101,Wisconsin,Racine

@@ -10,7 +10,14 @@
 #Previously we had built the figures as fractions of the laborforce but since we
 #now want numbers, we are doing it as a fraction of the total population
 total_wt <- as.data.table(full_long)[,sum(wtfinl)]
-total_wth <- as.data.table(cps_data)[,sum(hwtfinl)]
+total_wth <- cps_data %>%
+  #filter(labforce == 2) %>%
+  select(hrhhid,hrhhid2,mish,hwtfinl) %>%
+  distinct() %>%
+  summarize(hwtfinl=sum(hwtfinl)) %>%
+  pull()
+
+hh_count <- 127586000
 
 # occ_shares <-
 #   as.data.table(cps_data) %>%
@@ -31,7 +38,7 @@ total_wth <- as.data.table(cps_data)[,sum(hwtfinl)]
 co_by_state <- as.data.table(hh_long) %>%
   .[,
     lapply(.SD, function(x)
-      sum(x * hwtfinl) / total_wth * 127590000),
+      sum(x * hwtfinl) / total_wth * hh_count),
     by = c("statecensus"),
     .SDcols = str_subset(names(hh_long), "^child")] %>%
   as_tibble() %>%
@@ -50,7 +57,30 @@ co_by_state %>%
   write_csv(.,path = "outputs/co_by_state_long.csv")
 
 
+##########################
+co_by_msa <- as.data.table(hh_long) %>%
+  .[,
+    lapply(.SD, function(x)
+      sum(x * hwtfinl) / total_wth * hh_count),
+    by = c("metfips"),
+    .SDcols = str_subset(names(hh_long), "^child")] %>%
+  as_tibble() %>%
+  # inner_join(.,as.data.table(full_long) %>%
+  #              .[,
+  #                .(persons=sum(wtfinl)/total_wt,
+  #                  records=.N),
+  #                by = c("statecensus")] %>%
+  #              as_tibble()) %>%
+  mutate(metfips=to_factor(metfips)) %>%
+  inner_join(met_codes,
+             .,
+             by=c("codes"="metfips"))
 
+write_csv(co_by_msa,path = "outputs/co_by_msa_wide.csv")
+
+co_by_msa %>%
+  pivot_longer(-one_of("codes","description"),names_to = "co_type") %>%
+  write_csv(.,path = "outputs/co_by_msa_long.csv")
 
 
 

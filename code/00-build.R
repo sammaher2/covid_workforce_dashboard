@@ -30,8 +30,7 @@ if(file.exists("cache/cps_co.Rdata")){
 }
 
 
-
-
+  
 
 ############################################
 #Summarize the data
