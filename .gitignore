@@ -29,7 +29,6 @@ vignettes/*.pdf
 
 # knitr and R markdown default cache directories
 *_cache/
-/cache/
 
 # Temporary files created by R markdown
 *.utf8.md
@@ -39,4 +38,10 @@ vignettes/*.pdf
 .Renviron
 
 
-inputs/
+
+cache/cps_co.Rdata
+cache/cps_data.Rdata
+inputs/cps_00005.dat
+inputs/cps_00005.dat.gz
+inputs/cps_00006.dat
+inputs/cps_00006.dat.gz
