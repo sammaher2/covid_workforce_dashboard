@@ -1,2 +1,12 @@
-# us_childcare_dashboard
-This repo extends the analysis in us_childcare_obligations to produce data for a decision support dashboard
+# US Child Care Dashboard
+
+This repo extends the analysis in The Impact of School Closure for COVID-19 on the US Healthcare Workforce and the Net Mortality Effects to produce estimates of children in need of care for a decision support dashboard.
+
+
+
+## Data
+
+The dataset for this analysis can be downloaded from here: https://drive.google.com/drive/folders/1YtuHk_iK5QBj3IM_NhdWrL4BpT3ckQBI?usp=sharing
+
+Place the data into the inputs folder.  The build script outlines the logic of the data processing steps.
+

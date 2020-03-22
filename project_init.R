@@ -11,6 +11,7 @@ init.pacs(c("tidyverse",      #shortcut to many useful packages (eg, dplyr, ggpl
             "lubridate",      #working with dates
             "sf",             #for GIS
             "USAboundaries",  #easily access US maps in sf
+            "tigris",         #census maps
             "cowplot",
             "svDialogs",      #dialog boxes on all platforms
             "googledrive",
@@ -40,7 +41,7 @@ folder.setup()
 
 #Check if data has been downloaded
 # if(!file.exists("inputs/cps_00005.dat.gz")){
-#   stop("Please download the data from: https://drive.google.com/file/d/1rKtRz2NlN7U3fnrUBmA6yDYtYJNg1p57/view?usp=sharing")
+#   stop("Please download the data from: https://drive.google.com/drive/folders/1YtuHk_iK5QBj3IM_NhdWrL4BpT3ckQBI?usp=sharing")
 #   
 # } else {
 #   source("code/00-build.R")
