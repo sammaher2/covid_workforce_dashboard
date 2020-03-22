@@ -26,4 +26,4 @@ mapview::mapview(co.map) %>%
   mapview::mapshot(.,url = "map.html")
 
 
-write_csv(met_codes,path = "msa_codes.csv")
+#write_csv(met_codes,path = "msa_codes.csv")

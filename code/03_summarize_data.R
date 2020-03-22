@@ -10,8 +10,7 @@
 #Previously we had built the figures as fractions of the laborforce but since we
 #now want numbers, we are doing it as a fraction of the total population
 total_wt <- as.data.table(full_long)[,sum(wtfinl)]
-total_wth <- cps_data %>%
-  #filter(labforce == 2) %>%
+total_wth <- hh_long %>%
   select(hrhhid,hrhhid2,mish,hwtfinl) %>%
   distinct() %>%
   summarize(hwtfinl=sum(hwtfinl)) %>%
@@ -48,14 +47,15 @@ co_by_state <- as.data.table(hh_long) %>%
   #                  records=.N),
   #                by = c("statecensus")] %>%
   #              as_tibble()) %>%
-  mutate(statecensus=to_factor(statecensus))
+  rename(geoid=statecensus) %>%
+  mutate(description=as.character(to_factor(geoid)))
 
 write_csv(co_by_state,path = "outputs/co_by_state_wide.csv")
 
-co_by_state %>%
-  pivot_longer(-statecensus,names_to = "co_type") %>%
-  write_csv(.,path = "outputs/co_by_state_long.csv")
+co_by_state_long <- co_by_state %>%
+  pivot_longer(-one_of("geoid","description"),names_to = "co_type") 
 
+save(co_by_state, file = "cache/co_by_state.Rdata")
 
 ##########################
 co_by_msa <- as.data.table(hh_long) %>%
@@ -72,17 +72,16 @@ co_by_msa <- as.data.table(hh_long) %>%
   #                by = c("statecensus")] %>%
   #              as_tibble()) %>%
   mutate(metfips=to_factor(metfips)) %>%
-  inner_join(met_codes,
+  inner_join(met_codes %>% rename(geoid=codes),
              .,
-             by=c("codes"="metfips"))
+             by=c("geoid"="metfips"))
 
 write_csv(co_by_msa,path = "outputs/co_by_msa_wide.csv")
 
-co_by_msa %>%
-  pivot_longer(-one_of("codes","description"),names_to = "co_type") %>%
-  write_csv(.,path = "outputs/co_by_msa_long.csv")
+co_by_msa_long <- co_by_msa %>%
+  pivot_longer(-one_of("geoid","description"),names_to = "co_type") 
 
-
+save(co_by_msa_long, file = "cache/co_by_msa.Rdata")
 
 
 
