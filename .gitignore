@@ -50,3 +50,5 @@ inputs/cps_00006.dat
 inputs/cps_00006.dat.gz
 .Rproj.user
 .RDataTmp
+scratch/data_in.csv
+scratch/data_in2.csv

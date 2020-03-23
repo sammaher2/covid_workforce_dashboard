@@ -29,6 +29,21 @@ if(!file.exists("cache/cps_co.Rdata")){
 }
 load("cache/cps_co.Rdata")
   
+###########NHIS DATA
+if(!file.exists("cache/ind_codes_nhis.Rdata")){
+  get_nhis_ind_codes()
+}
+load("cache/ind_codes_nhis.Rdata")
+
+if(!file.exists("cache/occ_codes_nhis.Rdata")){
+  get_nhis_ind_codes()
+}
+load("cache/occ_codes_nhis.Rdata")
+
+
+
+
+
 
 ############################################
 #Summarize the data

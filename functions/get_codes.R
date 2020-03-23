@@ -108,7 +108,7 @@ get_cps_ind_codes <- function(){
   ind_refs <- read_excel(path = "inputs/reference_codes.xlsx",
                          sheet = "ind_code") %>%
     clean_names("snake") %>%
-    mutate(essential=ifelse(essential=="x",1,essential),
+    mutate(essential=ifelse(essential=="x",1,essential),  #SAM THIS IS THE LINE YOU CHANGED
            ind_code=str_pad(ind_code,4,"left","0")) 
   
   
