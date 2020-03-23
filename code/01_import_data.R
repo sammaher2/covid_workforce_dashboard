@@ -9,8 +9,8 @@ if(!file.exists("inputs/cps_00006.dat")){
 
 #################################
 #Read in data
-data_in <- read_ipums_micro(ddi="inputs/cps_00005.xml",
-                            data_file = "inputs/cps_00005.dat") %>%
+data_in <- read_ipums_micro(ddi="inputs/cps_00006.xml",
+                            data_file = "inputs/cps_00006.dat") %>%
   rename_all(str_to_lower)
 
 #Subset only CPS monthly data 

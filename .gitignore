@@ -20,6 +20,9 @@
 # RStudio files
 .Rproj.user/
 
+SM_data
+scratch
+
 # produced vignettes
 vignettes/*.html
 vignettes/*.pdf
@@ -45,3 +48,5 @@ inputs/cps_00005.dat
 inputs/cps_00005.dat.gz
 inputs/cps_00006.dat
 inputs/cps_00006.dat.gz
+.Rproj.user
+.RDataTmp

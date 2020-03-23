@@ -1,0 +1,2200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ipums-ddi-xslt.xsl"?>
+<codeBook xmlns="ddi:codebook:2_5" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="ddi:codebook:2_5 http://www.ddialliance.org/Specification/DDI-Codebook/2.5/XMLSchema/codebook.xsd" version="2.5" ID="ddi2-142973_nhis_00001.dat-nhis.ipums.org">
+  <docDscr>
+    <citation>
+      <titlStmt>
+        <titl>Codebook for an Integrated Health Interview Series Data Extract</titl>
+        <subTitl>DDI 2.5 metadata describing the extract file  'nhis_00001.dat'</subTitl>
+        <IDNo>ddi2-142973_nhis_00001.dat-nhis.ipums.org</IDNo>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="University of Minnesota">Minnesota Population Center</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <producer abbr="MPC" affiliation="University of Minnesota" role="Documentation">Minnesota Population Center</producer>
+        <prodDate date="2020-03-22">March 22, 2020</prodDate>
+        <prodPlac>Minnesota Population Center, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
+      </prodStmt>
+      <distStmt>
+        <contact affiliation="University of Minnesota" URI="http://pop.umn.edu">Minnesota Population Center</contact>
+      </distStmt>
+    </citation>
+  </docDscr>
+  <stdyDscr>
+    <citation>
+      <titlStmt>
+        <titl>User Extract nhis_00001.dat</titl>
+      </titlStmt>
+      <rspStmt>
+        <AuthEnty affiliation="University of Minnesota">Minnesota Population Center</AuthEnty>
+      </rspStmt>
+      <prodStmt>
+        <producer abbr="MPC" affiliation="University of Minnesota" role="Documentation">Minnesota Population Center</producer>
+        <prodDate date="2020-03-22">March 22, 2020</prodDate>
+        <prodPlac>Minnesota Population Center, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</prodPlac>
+      </prodStmt>
+      <distStmt>
+        <contact affiliation="University of Minnesota" URI="http://pop.umn.edu">Minnesota Population Center</contact>
+      </distStmt>
+      <serStmt>
+        <serName abbr="nhis">NHIS</serName>
+        <serInfo>DOI:10.18128/D070.V6.4</serInfo>
+      </serStmt>
+      <verStmt>
+        <version date="2020-03-22"/>
+      </verStmt>
+    </citation>
+    <stdyInfo>
+      <subject>
+        <topcClas vocab="IPUMS">Technical Household Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Geography Variables -- HOUSEHOLD</topcClas>
+        <topcClas vocab="IPUMS">Technical Person Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Core Demographic Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Work Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Access to Care Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">General Coverage Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Condition Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Hypertension Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Immunosupression Variables -- PERSON</topcClas>
+        <topcClas vocab="IPUMS">Smoking Variables -- PERSON</topcClas>
+      </subject>
+      <sumDscr ID="sdatref-2408">
+        <timePrd event="single" date="2008">2008</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2409">
+        <timePrd event="single" date="2009">2009</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2415">
+        <timePrd event="single" date="2010">2010</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2416">
+        <timePrd event="single" date="2011">2011</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2417">
+        <timePrd event="single" date="2012">2012</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2418">
+        <timePrd event="single" date="2013">2013</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2419">
+        <timePrd event="single" date="2014">2014</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2438">
+        <timePrd event="single" date="2015">2015</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2439">
+        <timePrd event="single" date="2016">2016</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2440">
+        <timePrd event="single" date="2017">2017</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <sumDscr ID="sdatref-2441">
+        <timePrd event="single" date="2018">2018</timePrd>
+        <nation abbr="us">United States</nation>
+      </sumDscr>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  NHIS 2008; regular size
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  NHIS 2009; regular size
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  NHIS 2010; regular size
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  NHIS 2011; regular size
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  NHIS 2012; regular size
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  NHIS 2013; regular size
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  NHIS 2014; regular size
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  NHIS 2015; regular size
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  NHIS 2016; regular size
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  NHIS 2017; regular size
+]]></notes>
+      <notes><![CDATA[Additional notes on a sample that is part of this study:  NHIS 2018; regular size
+]]></notes>
+    </stdyInfo>
+    <dataAccs>
+      <useStmt>
+        <confDec required="yes"><![CDATA[The Public Health Service Act (Section 308 (d)) provides that the data collected by the National Center for Health Statistics (NCHS), Centers for Disease Control and Prevention (CDC), may be used only for the purpose of health statistical reporting and analysis. Any effort to determine the identity of any reported case is prohibited by this law. NCHS does all it can to assure that the identity of data subjects cannot be disclosed. All direct identifiers, as well as any characteristics that might lead to identification, are omitted from the data files. Any intentional identification or disclosure of a person or establishment violates the assurances of confidentiality given to the providers of the information. 
+
+Therefore, users will: 
+
+Use the data in these data files for statistical reporting and analysis only. 
+
+Make no use of the identity of any person or establishment discovered inadvertently and advise the Director, NCHS, of any such discovery (301-458-4500). 
+
+Not link these data files with individually identifiable data from other NCHS or non-NCHS data files. 
+
+By using these data, you signify your agreement to comply with the above-stated statutorily-based requirements. ]]></confDec>
+        <contact affiliation="Minnesota Population Center" URI="http://www.nhis.ipums.org/">Integrated Health Interview Series</contact>
+        <citReq><![CDATA[Publications and research reports based on the NHIS database must cite it appropriately.  The citation is as follows:
+
+Lynn A. Blewett,  Julia A. Rivera Drew,  Miriam L. King and Kari C.W. Williams. IPUMS Health  Surveys: National Health Interview Survey, Version 6.4 [dataset]. Minneapolis, MN: IPUMS, 2019. https://doi.org/10.18128/D070.V6.4
+
+If possible, citations should also include the URL for the NHIS site:  http://www.nhis.ipums.org.
+
+Please see http://www.nhis.ipums.org/nhis/citation.shtml for precise formatting of the citation.]]></citReq>
+        <conditions><![CDATA[The Public Health Service Act (Section 308 (d)) provides that the data collected by the National Center for Health Statistics (NCHS), Centers for Disease Control and Prevention (CDC), may be used only for the purpose of health statistical reporting and analysis. Any effort to determine the identity of any reported case is prohibited by this law. NCHS does all it can to assure that the identity of data subjects cannot be disclosed. All direct identifiers, as well as any characteristics that might lead to identification, are omitted from the data files. Any intentional identification or disclosure of a person or establishment violates the assurances of confidentiality given to the providers of the information. 
+
+Therefore, users must: 
+
+Use the data in these data files for statistical reporting and analysis only. 
+
+Make no use of the identity of any person or establishment discovered inadvertently and advise the Director, NCHS, of any such discovery (301-458-4500). 
+
+Not link these data files with individually identifiable data from other NCHS or non-NCHS data files. 
+
+By using these data, you signify your agreement to comply with the above-stated statutorily-based requirements. 
+
+Furthermore, users of NHIS data must agree to abide by the conditions of use. Users must agree to the following conditions:
+  
+  
+(1) Use the data in these data files for statistical reporting and analysis only 
+
+(2) Make no use of the identity of any person or establishment discovered inadvertently and advise the Director of NCHS of any such discovery (301-458-4500) 
+
+(3) Do not link these data with individually-identifiable data from NCHS or non-NCHS data files 
+
+(4) No fees may be charged for use or distribution of the data.  All persons are granted a limited license to use and distribute these data, but you may not charge a fee for the data if you distribute them to others. 
+
+(5) Cite the NHIS appropriately.  Publications and research reports based on the database must cite it appropriately.  Please see http://www.nhis.ipums.org/nhis/citation.shtml
+
+(6) NHIS cannot be used to study small geographic areas.  The smallest geographical areas identified in the NHIS are regions (groups of states) and a limited number of metropolitan areas.
+
+(7) This system provides individual-level data only.  The NHIS Data Extraction System will not produce tables. You will need to use a statistical software package, such as Stata, SAS, or SPSS, to analyze the downloaded data.  Alternatively, you may use the NHIS-SDA tabulator to produce tables online, without making a data extract.]]></conditions>
+        <disclaimer>The user of the data acknowledges that the original collector of the data, the authorized distributor of the data, and the relevant funding agency bear no responsibility for use of the data or for interpretations or inferences based upon such uses.</disclaimer>
+      </useStmt>
+    </dataAccs>
+    <notes><![CDATA[User-provided description:  First pull SM]]></notes>
+  </stdyDscr>
+  <fileDscr ID="ExtractData">
+    <fileTxt>
+      <fileName>nhis_00001.dat</fileName>
+      <fileCont>Microdata records</fileCont>
+      <fileStrc type="rectangular">
+      </fileStrc>
+      <fileType charset="ISO-8859-1">ISO-8859-1 data file</fileType>
+      <format>fixed length fields</format>
+      <filePlac>Minnesota Population Center, 50 Willey Hall, 225 - 19th Avenue South, Minneapolis, MN 55455</filePlac>
+    </fileTxt>
+  </fileDscr>
+  <dataDscr>
+    <var ID="YEAR" files="ExtractData" name="YEAR" intrvl="contin" dcml="0">
+      <location StartPos="1" width="4" EndPos="4"/>
+      <labl>Survey year</labl>
+      <txt><![CDATA[YEAR is a four-digit variable reporting the calendar year (e.g., 2003) the survey was conducted and the data were collected.  YEAR indicates the survey year reported on the household record.]]></txt>
+      <codInstr><![CDATA[This is a 4-digit numeric variable with 0 implied decimal places]]></codInstr>
+      <concept vocab="IPUMS">Technical Household Variables -- HOUSEHOLD</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="REGION" files="ExtractData" name="REGION" intrvl="discrete" dcml="0">
+      <location StartPos="5" width="2" EndPos="6"/>
+      <labl>Region of residence</labl>
+      <txt><![CDATA[REGION reports the region of the U.S. where the housing unit containing survey participants was located.  The geographic information included in REGION was added during processing, rather than ascertained via questioning.  REGION is the smallest geographic unit identified in the IPUMS NHIS data for 1985 forward.  In 1968-1984, a limited number (under 30) metropolitan areas were also identified (METAREA).
+
+The four regions--Northeast, North Central/Midwest, South, and West--correspond to the U.S. regions recognized by the Census Bureau. Divisions and states included in the four regions are as follows:
+
+Northeast:  New England Division (Maine, New Hampshire, Vermont, Massachusetts, Rhode Island, and Connecticut) and Middle Atlantic Division (New York, New Jersey, and Pennsylvania)
+
+North Central/Midwest: East North Central Division (Michigan, Ohio, Indiana, Illinois, Wisconsin) and West North Central Division (Minnesota, Iowa, Missouri, North Dakota, South Dakota, Kansas, and Nebraska)
+
+South: South Atlantic Division (Delaware, Maryland, District of Columbia, Virginia, West Virginia, North Carolina, South Carolina, Georgia, and Florida), East South Central Division (Kentucky, Tennessee, Mississippi, and Alabama), and West South Central Division (Texas, Arkansas, Oklahoma, and Louisiana)
+
+West: Pacific Division (Washington, Alaska, Oregon, California, and Hawaii) and Mountain Division (Montana, Idaho, Wyoming, Colorado, New Mexico, Arizona, Utah, and Nevada).]]></txt>
+      <catgry>
+        <catValu>01</catValu>
+        <labl>Northeast</labl>
+      </catgry>
+      <catgry>
+        <catValu>02</catValu>
+        <labl>North Central/Midwest</labl>
+      </catgry>
+      <catgry>
+        <catValu>03</catValu>
+        <labl>South</labl>
+      </catgry>
+      <catgry>
+        <catValu>04</catValu>
+        <labl>West</labl>
+      </catgry>
+      <catgry>
+        <catValu>08</catValu>
+        <labl>NO DATA IN ROUND</labl>
+      </catgry>
+      <catgry>
+        <catValu>09</catValu>
+        <labl>Unknown</labl>
+      </catgry>
+      <concept vocab="IPUMS">Geography Variables -- HOUSEHOLD</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="NHISPID" files="ExtractData" name="NHISPID" intrvl="contin" dcml="0">
+      <location StartPos="7" width="16" EndPos="22"/>
+      <labl>NHIS Unique Identifier, person</labl>
+      <txt><![CDATA[NHISPID is an IPUMS NHIS-constructed value that is an identifying number unique to each person in a given survey year.  Using NHISPID, analysts can link IPUMS NHIS data with additional data elements, from the NHIS source public use data files, that are not currently available in IPUMS.  For example, researchers can use NHISPID to link variables in IPUMS NHIS with other variables from the core NHIS files variables.  Alternatively, users may use NHISPID to link variables from IPUMS with variables from NHIS supplements that are not yet part of IPUMS NHIS. NHISPID is a single variable constructed by concatenating multiple data elements from the NHIS source data files.  
+
+Analysts wishing to link household-level NHIS data should use the household-level linking key NHISHID.
+
+See the user note on LINKING [URL omitted from DDI.] for instructions on how to create links between IPUMS NHIS and NHIS source data.]]></txt>
+      <codInstr><![CDATA[
+NHISPID is a 16-character string variable.]]></codInstr>
+      <concept vocab="IPUMS">Technical Person Variables -- PERSON</concept>
+      <varFormat schema="other" type="character"/>
+    </var>
+    <var ID="AGE" files="ExtractData" name="AGE" intrvl="contin" dcml="0">
+      <location StartPos="23" width="2" EndPos="24"/>
+      <labl>Age</labl>
+      <txt><![CDATA[AGE reports the individual's age, in years since last birthday.  Age is not coded as "unknown" for any persons included in the IPUMS NHIS data.  As the public use file's codebooks for 1998 forward state, "Because age is an important variable for instrument check items and in developing the weights, all respondents must have data on age."]]></txt>
+      <codInstr><![CDATA[
+
+AGE is a 2-digit-numeric variable.
+
+85:	Top code for 85 years or older (1963-1968 and 1997-forward)
+90:	Top code for 90 years or older (1969-1995)
+99:	Top code for 99 years or older (1996 only)]]></codInstr>
+      <concept vocab="IPUMS">Core Demographic Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="SEX" files="ExtractData" name="SEX" intrvl="discrete" dcml="0">
+      <location StartPos="25" width="1" EndPos="25"/>
+      <labl>Sex</labl>
+      <txt><![CDATA[SEX indicates whether the person was male or female.]]></txt>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>Male</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Female</labl>
+      </catgry>
+      <concept vocab="IPUMS">Core Demographic Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="OCC" files="ExtractData" name="OCC" intrvl="discrete" dcml="0">
+      <location StartPos="26" width="2" EndPos="27"/>
+      <labl>Detailed occupation</labl>
+      <txt><![CDATA[OCC reports the sample person's primary occupation, coded into a contemporary Classified Index of Occupation (from 1969 to 1982) and the Standard Occupational Classification (from 1983 and forward). Please see the Comparability and Universe tabs for more information on how this variable was constructed. 
+
+To increase comparability over time, the IPUMS NHIS provides OCC1995, which applies a common occupational classification system over time. This recoded variable is also discussed at the "User Note on Occupation and Industry Variables" [URL omitted from DDI.].]]></txt>
+      <catgry>
+        <catValu>00</catValu>
+        <labl></labl>
+      </catgry>
+      <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="IND" files="ExtractData" name="IND" intrvl="discrete" dcml="0">
+      <location StartPos="28" width="2" EndPos="29"/>
+      <labl>Detailed industry recode, 1969-2003</labl>
+      <txt><![CDATA[IND reports the sample person's primary industry, coded into a contemporary Standard Industrial Classification (from 1969 to 2003) and into the North American Industry Classification System (from 2004 and forward). Please see the Comparability and Universe tabs for more information on how this variable was constructed. 
+
+To increase comparability over time, the IPUMS NHIS provides IND1995, which applies a common industrial classification system over time. This recoded variable is also discussed at the "User Note on Occupation and Industry Variables" [URL omitted from DDI.].]]></txt>
+      <catgry>
+        <catValu>00</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="OCCUPN104" files="ExtractData" name="OCCUPN104" intrvl="discrete" dcml="0">
+      <location StartPos="30" width="2" EndPos="31"/>
+      <labl>Detailed occupational classification (2004 forward)</labl>
+      <txt><![CDATA[For sample persons aged 18 and older who were working at a paying or non-paying job last week, who had a job or business but were not at work last week, or who had ever worked, OCCUPN104 reports the person's occupation, grouped into 94 detailed occupation subgroups. Please refer to the code tab for more information on different occupational categories.
+
+OCCUPN104 provides a detailed list of 94 occupation subgroups while OCCUPN204  only provides a simple list of 23 major occupation groups. OCCUPN104 and OCCUPN204 correspond to the 2000 Standard Occupational Classification (2000 SOC or the new SOC) subgroups and major groups, respectively, as determined by the U.S. Census Bureau and the Bureau of Labor Statistics.]]></txt>
+      <catgry>
+        <catValu>99</catValu>
+        <labl>Don't know</labl>
+      </catgry>
+      <catgry>
+        <catValu>98</catValu>
+        <labl>Not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>97</catValu>
+        <labl>Refused, classified</labl>
+      </catgry>
+      <catgry>
+        <catValu>94</catValu>
+        <labl>Military Specific Occupations</labl>
+      </catgry>
+      <catgry>
+        <catValu>93</catValu>
+        <labl>Material moving workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>92</catValu>
+        <labl>Other transportation workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>91</catValu>
+        <labl>Water transportation workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>90</catValu>
+        <labl>Rail transportation workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>89</catValu>
+        <labl>Motor vehicle operators</labl>
+      </catgry>
+      <catgry>
+        <catValu>88</catValu>
+        <labl>Air transportation workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>87</catValu>
+        <labl>Supervisors, transportation and material moving workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>86</catValu>
+        <labl>Other production occupations</labl>
+      </catgry>
+      <catgry>
+        <catValu>85</catValu>
+        <labl>Plant and system operators</labl>
+      </catgry>
+      <catgry>
+        <catValu>84</catValu>
+        <labl>Woodworkers</labl>
+      </catgry>
+      <catgry>
+        <catValu>83</catValu>
+        <labl>Textile, apparel, and furnishings workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>82</catValu>
+        <labl>Printing workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>81</catValu>
+        <labl>Metal workers and plastic workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>80</catValu>
+        <labl>Food processing workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>79</catValu>
+        <labl>Assemblers and fabricators</labl>
+      </catgry>
+      <catgry>
+        <catValu>78</catValu>
+        <labl>Supervisors, production workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>77</catValu>
+        <labl>Other installation, maintenance, and repair occupations</labl>
+      </catgry>
+      <catgry>
+        <catValu>76</catValu>
+        <labl>Vehicle and mobile equipment mechanics, installers, and repairers</labl>
+      </catgry>
+      <catgry>
+        <catValu>75</catValu>
+        <labl>Electrical and electronic equipment mechanics, installers, and repairers</labl>
+      </catgry>
+      <catgry>
+        <catValu>74</catValu>
+        <labl>Supervisors of installation, maintenance, and repair workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>73</catValu>
+        <labl>Extraction workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>72</catValu>
+        <labl>Other construction and related workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>71</catValu>
+        <labl>Helpers, construction trades</labl>
+      </catgry>
+      <catgry>
+        <catValu>70</catValu>
+        <labl>Construction trades workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>69</catValu>
+        <labl>Supervisors, construction and extraction workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>68</catValu>
+        <labl>Forest, conservation, and logging workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>67</catValu>
+        <labl>Fishing and hunting workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>66</catValu>
+        <labl>Agricultural workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>65</catValu>
+        <labl>Supervisors, farming, fishing, and forestry workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>64</catValu>
+        <labl>Other office and administrative support workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>63</catValu>
+        <labl>Secretaries and administrative assistants</labl>
+      </catgry>
+      <catgry>
+        <catValu>62</catValu>
+        <labl>Material recording, scheduling, dispatching, and distributing workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>61</catValu>
+        <labl>Information and record clerks</labl>
+      </catgry>
+      <catgry>
+        <catValu>60</catValu>
+        <labl>Financial clerks</labl>
+      </catgry>
+      <catgry>
+        <catValu>59</catValu>
+        <labl>Communications equipment operators</labl>
+      </catgry>
+      <catgry>
+        <catValu>58</catValu>
+        <labl>Supervisors, office and administrative support workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>57</catValu>
+        <labl>Other sales and related workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>56</catValu>
+        <labl>Sales representatives, wholesale and manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>55</catValu>
+        <labl>Sales representatives, services</labl>
+      </catgry>
+      <catgry>
+        <catValu>54</catValu>
+        <labl>Retail sales workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>53</catValu>
+        <labl>Supervisors, sales workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>52</catValu>
+        <labl>Other personal care and service workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>51</catValu>
+        <labl>Transportation, tourism, and lodging attendants</labl>
+      </catgry>
+      <catgry>
+        <catValu>50</catValu>
+        <labl>Personal appearance workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>49</catValu>
+        <labl>Funeral service workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>48</catValu>
+        <labl>Entertainment attendants and related workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>47</catValu>
+        <labl>Animal care and service workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>46</catValu>
+        <labl>Supervisors, personal care and service workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>45</catValu>
+        <labl>Grounds maintenance workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>44</catValu>
+        <labl>Building cleaning and pest control workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>43</catValu>
+        <labl>Supervisors, building and grounds cleaning and maintenance workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>42</catValu>
+        <labl>Other food preparation and serving related workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>41</catValu>
+        <labl>Food and beverage serving workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>40</catValu>
+        <labl>Cooks and food preparation workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>39</catValu>
+        <labl>Supervisors, food preparation, and serving workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>38</catValu>
+        <labl>Other protective service workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>37</catValu>
+        <labl>Law enforcement workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>36</catValu>
+        <labl>Fire fighting and prevention workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>35</catValu>
+        <labl>First-line supervisors/managers, protective service workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>34</catValu>
+        <labl>Other healthcare support occupations</labl>
+      </catgry>
+      <catgry>
+        <catValu>33</catValu>
+        <labl>Occupational and physical therapist assistants and aides</labl>
+      </catgry>
+      <catgry>
+        <catValu>32</catValu>
+        <labl>Nursing, psychiatric, and home health aides</labl>
+      </catgry>
+      <catgry>
+        <catValu>31</catValu>
+        <labl>Other healthcare practitioners and technical occupations</labl>
+      </catgry>
+      <catgry>
+        <catValu>30</catValu>
+        <labl>Health technologists and technicians</labl>
+      </catgry>
+      <catgry>
+        <catValu>29</catValu>
+        <labl>Health diagnosing and treating practitioners</labl>
+      </catgry>
+      <catgry>
+        <catValu>28</catValu>
+        <labl>Media and communication equipment workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>27</catValu>
+        <labl>Media and communication workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>26</catValu>
+        <labl>Entertainers and performers, sports and related workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>25</catValu>
+        <labl>Art and design workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>24</catValu>
+        <labl>Other education, training, and library occupations</labl>
+      </catgry>
+      <catgry>
+        <catValu>23</catValu>
+        <labl>Librarians, curators, and archivists</labl>
+      </catgry>
+      <catgry>
+        <catValu>22</catValu>
+        <labl>Other teachers and instructors</labl>
+      </catgry>
+      <catgry>
+        <catValu>21</catValu>
+        <labl>Primary, secondary, and special education school teachers</labl>
+      </catgry>
+      <catgry>
+        <catValu>20</catValu>
+        <labl>Postsecondary teachers</labl>
+      </catgry>
+      <catgry>
+        <catValu>19</catValu>
+        <labl>Legal support workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>18</catValu>
+        <labl>Lawyers, judges, and related workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>17</catValu>
+        <labl>Religious workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>16</catValu>
+        <labl>Counselors, social workers, and other community and social service specialists</labl>
+      </catgry>
+      <catgry>
+        <catValu>15</catValu>
+        <labl>Life, physical, and social science technicians</labl>
+      </catgry>
+      <catgry>
+        <catValu>14</catValu>
+        <labl>Social scientists and related workers</labl>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl>Physical scientists</labl>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl>Life scientists</labl>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl>Drafters, engineering, and mapping technicians</labl>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl>Engineers</labl>
+      </catgry>
+      <catgry>
+        <catValu>09</catValu>
+        <labl>Architects, surveyors, and cartographers</labl>
+      </catgry>
+      <catgry>
+        <catValu>08</catValu>
+        <labl>Mathematical science occupations</labl>
+      </catgry>
+      <catgry>
+        <catValu>07</catValu>
+        <labl>Computer specialists</labl>
+      </catgry>
+      <catgry>
+        <catValu>06</catValu>
+        <labl>Financial specialists</labl>
+      </catgry>
+      <catgry>
+        <catValu>05</catValu>
+        <labl>Business operations specialists</labl>
+      </catgry>
+      <catgry>
+        <catValu>04</catValu>
+        <labl>Other management occupations</labl>
+      </catgry>
+      <catgry>
+        <catValu>03</catValu>
+        <labl>Operations specialties managers</labl>
+      </catgry>
+      <catgry>
+        <catValu>02</catValu>
+        <labl>Advertising, marketing, promotions, public relations, and sales managers</labl>
+      </catgry>
+      <catgry>
+        <catValu>01</catValu>
+        <labl>Chief executives; general and operations managers; legislators</labl>
+      </catgry>
+      <catgry>
+        <catValu>00</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="INDSTRN104" files="ExtractData" name="INDSTRN104" intrvl="discrete" dcml="0">
+      <location StartPos="32" width="2" EndPos="33"/>
+      <labl>Detailed industry classification (2004 forward, NAICS)</labl>
+      <txt><![CDATA[For sample adults aged 18 and older who were working at a paying or non-paying job last week, who were with a job or business but not at work, who were working but not for pay at a family-owned job or business, or who have ever worked, INDSTRN104 reports the person's industry, grouped into 79 industry subgroups. Please refer to the code tab for more information on different industrial categories.
+
+This variable was introduced in 2004 as part of the Adult Socio-Demographics (ASD) section, which provides information on occupation, industry, workplace, and employment conditions of currently employed sample adults as well as those who have ever worked. 
+
+Related Variables
+INDSTRN104 provides a detailed list of 79 industry subgroups while INDSTRN204 provides a simple list of 21 major industry groups. INDSTRN104 and INDSTRN204 correspond to the 2000 Standard Industry Classification (2000 SIC) subgroups and major groups, respectively, as determined by the U.S. Census Bureau and the Bureau of Labor Statistics.]]></txt>
+      <catgry>
+        <catValu>99</catValu>
+        <labl>Don't know</labl>
+      </catgry>
+      <catgry>
+        <catValu>98</catValu>
+        <labl>Not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>97</catValu>
+        <labl>Refused, classified</labl>
+      </catgry>
+      <catgry>
+        <catValu>79</catValu>
+        <labl>Armed Forces</labl>
+      </catgry>
+      <catgry>
+        <catValu>78</catValu>
+        <labl>Public Administration Industries</labl>
+      </catgry>
+      <catgry>
+        <catValu>77</catValu>
+        <labl>Private households</labl>
+      </catgry>
+      <catgry>
+        <catValu>76</catValu>
+        <labl>Religious, grantmaking, civic, labor, professional, and similar organization</labl>
+      </catgry>
+      <catgry>
+        <catValu>75</catValu>
+        <labl>Personal services (barber shops, beauty salons, nail salons, laundry, funeral homes and cemetaries)</labl>
+      </catgry>
+      <catgry>
+        <catValu>74</catValu>
+        <labl>Repair and maintenance</labl>
+      </catgry>
+      <catgry>
+        <catValu>73</catValu>
+        <labl>Food services and drinking places</labl>
+      </catgry>
+      <catgry>
+        <catValu>72</catValu>
+        <labl>Accommodation</labl>
+      </catgry>
+      <catgry>
+        <catValu>71</catValu>
+        <labl>Amusement, gambling, and recreation industries</labl>
+      </catgry>
+      <catgry>
+        <catValu>70</catValu>
+        <labl>Museums, historical sites, and similar institutions</labl>
+      </catgry>
+      <catgry>
+        <catValu>69</catValu>
+        <labl>Performing arts, spectator sports, and related industries</labl>
+      </catgry>
+      <catgry>
+        <catValu>68</catValu>
+        <labl>Social assistance</labl>
+      </catgry>
+      <catgry>
+        <catValu>67</catValu>
+        <labl>Nursing and residential care facilities</labl>
+      </catgry>
+      <catgry>
+        <catValu>66</catValu>
+        <labl>Hospitals</labl>
+      </catgry>
+      <catgry>
+        <catValu>65</catValu>
+        <labl>Ambulatory health care services</labl>
+      </catgry>
+      <catgry>
+        <catValu>64</catValu>
+        <labl>Education Services Industries</labl>
+      </catgry>
+      <catgry>
+        <catValu>63</catValu>
+        <labl>Administrative and Support and Waste Management and Remediation Services Industries</labl>
+      </catgry>
+      <catgry>
+        <catValu>62</catValu>
+        <labl>Management of Companies and Enterprises Industries</labl>
+      </catgry>
+      <catgry>
+        <catValu>61</catValu>
+        <labl>Professional, Scientific, and Technical Services Industries</labl>
+      </catgry>
+      <catgry>
+        <catValu>60</catValu>
+        <labl>Lessors of nonfinancial intangible assets (except copyrighted works)</labl>
+      </catgry>
+      <catgry>
+        <catValu>59</catValu>
+        <labl>Rental and leasing services</labl>
+      </catgry>
+      <catgry>
+        <catValu>58</catValu>
+        <labl>Real estate</labl>
+      </catgry>
+      <catgry>
+        <catValu>57</catValu>
+        <labl>Insurance carriers and related activities</labl>
+      </catgry>
+      <catgry>
+        <catValu>56</catValu>
+        <labl>Securities, commodity contracts, and other financial investments and related activities</labl>
+      </catgry>
+      <catgry>
+        <catValu>55</catValu>
+        <labl>Credit intermediation and related activities</labl>
+      </catgry>
+      <catgry>
+        <catValu>54</catValu>
+        <labl>Monetary authorities -- central bank</labl>
+      </catgry>
+      <catgry>
+        <catValu>53</catValu>
+        <labl>Information services and data processing</labl>
+      </catgry>
+      <catgry>
+        <catValu>52</catValu>
+        <labl>Broadcasting and telecommunications</labl>
+      </catgry>
+      <catgry>
+        <catValu>51</catValu>
+        <labl>Motion picture and sound recording industries</labl>
+      </catgry>
+      <catgry>
+        <catValu>50</catValu>
+        <labl>Publishing industries (except internet)</labl>
+      </catgry>
+      <catgry>
+        <catValu>49</catValu>
+        <labl>Warehousing and storage</labl>
+      </catgry>
+      <catgry>
+        <catValu>48</catValu>
+        <labl>Postal service, couriers, and messengers</labl>
+      </catgry>
+      <catgry>
+        <catValu>47</catValu>
+        <labl>Transportation (including support activities for transportation)</labl>
+      </catgry>
+      <catgry>
+        <catValu>46</catValu>
+        <labl>Nonstore retailers and non-specified retail trade</labl>
+      </catgry>
+      <catgry>
+        <catValu>45</catValu>
+        <labl>Miscellaneous store retailers</labl>
+      </catgry>
+      <catgry>
+        <catValu>44</catValu>
+        <labl>General merchandise stores</labl>
+      </catgry>
+      <catgry>
+        <catValu>43</catValu>
+        <labl>Sporting goods, camera, hobby, book and music stores</labl>
+      </catgry>
+      <catgry>
+        <catValu>42</catValu>
+        <labl>Clothing and clothing accessories stores</labl>
+      </catgry>
+      <catgry>
+        <catValu>41</catValu>
+        <labl>Gasoline stations</labl>
+      </catgry>
+      <catgry>
+        <catValu>40</catValu>
+        <labl>Health and personal care stores</labl>
+      </catgry>
+      <catgry>
+        <catValu>39</catValu>
+        <labl>Food and beverage stores</labl>
+      </catgry>
+      <catgry>
+        <catValu>38</catValu>
+        <labl>Building material and garden equipment and supplies dealers</labl>
+      </catgry>
+      <catgry>
+        <catValu>37</catValu>
+        <labl>Electronics and appliance stores</labl>
+      </catgry>
+      <catgry>
+        <catValu>36</catValu>
+        <labl>Furniture and home furnishings stores</labl>
+      </catgry>
+      <catgry>
+        <catValu>35</catValu>
+        <labl>Motor vehicle and parts dealers</labl>
+      </catgry>
+      <catgry>
+        <catValu>34</catValu>
+        <labl>Non-specified wholesale trade</labl>
+      </catgry>
+      <catgry>
+        <catValu>33</catValu>
+        <labl>Merchant wholesalers, nondurable goods</labl>
+      </catgry>
+      <catgry>
+        <catValu>32</catValu>
+        <labl>Merchant wholesalers, durable goods</labl>
+      </catgry>
+      <catgry>
+        <catValu>31</catValu>
+        <labl>Miscellaneous manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>30</catValu>
+        <labl>Furniture and related product manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>29</catValu>
+        <labl>Transportation equipment manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>28</catValu>
+        <labl>Electrical equipment, appliance, and component manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>27</catValu>
+        <labl>Computer and electronic product manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>26</catValu>
+        <labl>Machinery manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>25</catValu>
+        <labl>Fabricated metal product manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>24</catValu>
+        <labl>Primary metal manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>23</catValu>
+        <labl>Nonmetallic mineral product manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>22</catValu>
+        <labl>Plastics and rubber products manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>21</catValu>
+        <labl>Chemical manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>20</catValu>
+        <labl>Petroleum and coal products manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>19</catValu>
+        <labl>Printing and related support activities</labl>
+      </catgry>
+      <catgry>
+        <catValu>18</catValu>
+        <labl>Paper manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>17</catValu>
+        <labl>Wood product manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>16</catValu>
+        <labl>Leather and allied product manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>15</catValu>
+        <labl>Apparel manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>14</catValu>
+        <labl>Textile product mills</labl>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl>Textile mills</labl>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl>Beverage and tobacco product manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl>Food manufacturing</labl>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl>Construction Industries</labl>
+      </catgry>
+      <catgry>
+        <catValu>09</catValu>
+        <labl>Utilities Industries</labl>
+      </catgry>
+      <catgry>
+        <catValu>08</catValu>
+        <labl>Support activities for mining</labl>
+      </catgry>
+      <catgry>
+        <catValu>07</catValu>
+        <labl>Mining (except oil and gas)</labl>
+      </catgry>
+      <catgry>
+        <catValu>06</catValu>
+        <labl>Oil and gas extraction</labl>
+      </catgry>
+      <catgry>
+        <catValu>05</catValu>
+        <labl>Support activities for agriculture and forestry</labl>
+      </catgry>
+      <catgry>
+        <catValu>04</catValu>
+        <labl>Fishing, hunting, and trapping</labl>
+      </catgry>
+      <catgry>
+        <catValu>03</catValu>
+        <labl>Forestry and logging</labl>
+      </catgry>
+      <catgry>
+        <catValu>02</catValu>
+        <labl>Animal production</labl>
+      </catgry>
+      <catgry>
+        <catValu>01</catValu>
+        <labl>Crop production</labl>
+      </catgry>
+      <catgry>
+        <catValu>00</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <concept vocab="IPUMS">Work Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="DELAYCOST" files="ExtractData" name="DELAYCOST" intrvl="discrete" dcml="0">
+      <location StartPos="34" width="1" EndPos="34"/>
+      <labl>Medical care delayed due to cost, past 12 months</labl>
+      <txt><![CDATA[DELAYCOST indicates whether, during the past twelve months, individuals delayed seeking medical care because of worry about the cost.  For 1997 forward, respondents were told not to include dental care when answering this question.
+
+ The Field Representative's Manual for 1993 forward noted, "Delayed assumes that medical care has been or will eventually be received."  This definition of the term was not routinely shared with respondents.
+
+Related Variables
+
+Several other variables available for 1997 forward address reasons other than "worry about the cost" that caused sample adults and sample children to delay getting medical care.  The non-financial reasons for delays in getting medical care identified in these variables are:  "you couldn't get an appointment soon enough" (DELAYAPPT); "the clinic/doctor's office wasn't open when you could get there" (DELAYHRS); "you couldn't get through on the telephone" (DELAYPHONE); "you didn't have transportation" (DELAYTRANS); and "once you get there, you have to wait too long to see the doctor" (DELAYWAIT). 
+
+Available for 1997 forward, YBARCARE, which identifies individuals who needed but did not get medical care because they could not afford it during the past 12 months, covers some of the same ground as DELAYCOST.  However, the wording of the question for YBARCARE implies that medical care was foregone for financial reasons, while the wording of the question for DELAYCOST refers to care delayed for financial reasons.  The difference in these two variables may, however, be less than is implied by this semantic distinction.  In the case of some acute illnesses (such as respiratory infections and "stomach flu"), medical care that was delayed was doubtless ultimately foregone in many cases. 
+]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know (1993-96: DK or refused)</labl>
+      </catgry>
+      <concept vocab="IPUMS">Access to Care Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="YBARCARE" files="ExtractData" name="YBARCARE" intrvl="discrete" dcml="0">
+      <location StartPos="35" width="1" EndPos="35"/>
+      <labl>Needed but couldn't afford medical care, past 12 months</labl>
+      <txt><![CDATA[YBARCARE indicates whether, at any time during the past 12 months, individuals needed medical care but did not get it because they could not afford it. Respondents were told not to include dental care when answering this question.
+
+For 1997 forward, the survey also collected information about whether, at any time during the past twelve months, sample adults and sample children needed but did not get specific types of medical care because they could not afford it.  The specific types of medical care foregone for financial reasons that the survey identified were mental health care or counseling (YBARMENTAL, prescription medicines (YBARMEDS), eyeglasses (YBARGLASS), dental care, including check-ups (YBARDENTAL, available for 1999 forward), follow-up care (YBARFOLLOW, available for 2011 forward), and specialist care (YBARSPECL, available for 2011 forward).]]></txt>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Access to Care Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="HINOTCOVE" files="ExtractData" name="HINOTCOVE" intrvl="discrete" dcml="0">
+      <location StartPos="36" width="1" EndPos="36"/>
+      <labl>Health Insurance coverage status</labl>
+      <txt><![CDATA[HINOTCOVE indicates whether the person currently lacks health insurance coverage.
+
+HINOTCOVE is a recoded variable created by the National Center for Health Statistics (NCHS) and included in the original NHIS public use data.   HINOTCOVE, like other recoded health insurance variables in these data, is based on responses to a series of questions and on back editing carried out by NCHS staff.  For the 1997 sample only, HINOTCOVE is constructed by IPUMS NHIS staff using back edited variables from the original NHIS public use data. The component variables used by IPUMS NHIS staff are available in IPUMS NHIS as HIPRIVATEE, HIMILITE, HIMCAIDE, HIMCAREE, HISTATEE, and HIOTHGOVE.]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No, has coverage</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes, has no coverage</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">General Coverage Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="ASTHMASTIL" files="ExtractData" name="ASTHMASTIL" intrvl="discrete" dcml="0">
+      <location StartPos="37" width="1" EndPos="37"/>
+      <labl>Still have asthma</labl>
+      <txt><![CDATA[For sample adults and sample children who were ever diagnosed by a health professional as having asthma (ASTHMAEV), ASTHMASTIL reports answers to the question, "Do you/does [sample child] still have asthma?" 
+
+The Field Representative's Manual for 2001 forward defined asthma as "a chronic respiratory disorder characterized by labored breathing and wheezing resulting from obstructed and constricted air passages."  This definition was not routinely shared with respondents.
+
+Other asthma-related questions were periodically included in the survey; see (ASTHMAEV) for a summary of these questions.]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Condition Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="CANCEREV" files="ExtractData" name="CANCEREV" intrvl="discrete" dcml="0">
+      <location StartPos="38" width="1" EndPos="38"/>
+      <labl>Ever told had cancer</labl>
+      <txt><![CDATA[CANCEREV identifies sample adults/persons who were ever diagnosed by a doctor or other health professional as having cancer. The Field Representative's Manuals for 1997-2000 directed the interviewer, "Do NOT include self-diagnosed conditions or conditions reported by a person who is not a doctor and not working with or for a doctor."  
+
+The Manual for 2005 defined cancer as "diseases in which abnormal cells divide without control.  Cancer cells can invade nearby tissue and can spread through the bloodstream and lymphatic system to other parts of the body."  This definition, which was not routinely shared with respondents, was taken from the Healthy People 2010 Objectives, a comprehensive set of national health goals for the decade, which are coordinated by the Office of Disease Prevention and Health Promotion of the U.S. Department of Health and Human Services.
+
+Available in 2007, CANCERYR identifies sample children who were diagnosed by a doctor or other health professional as having cancer during the past 12 months.]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Condition Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="CHEARTDIYR" files="ExtractData" name="CHEARTDIYR" intrvl="discrete" dcml="0">
+      <location StartPos="39" width="1" EndPos="39"/>
+      <labl>Had coronary heart disease, past 12 months</labl>
+      <txt><![CDATA[For sample adults whom a doctor or other health professional had ever diagnosed as having coronary heart disease (CHEARTDIEV), CHEARTDIYR reports answers to the question, "During the past 12 months, have you had coronary heart disease?"
+
+Coronary heart disease was not defined in the survey documentation.  The Medline Plus Medical Encyclopedia defines coronary heart disease as follows: "Coronary heart disease (or coronary artery disease) is a narrowing of the small blood vessels that supply blood and oxygen to the heart (coronary arteries).  Coronary disease usually results from the build-up of fatty material and plaque (atherosclerosis).  As the coronary arteries narrow, the flow of blood to the heart can slow or stop.  The disease can cause chest pain (stable angina), shortness of breath, heart attack, or other symptoms.  Coronary heart disease (CHD) is the leading cause of death in the United States for men and women."
+
+Related Variables
+
+In 2002 and 2007, the survey identified sample adults who had other forms of heart disease during the past 12 months, including angina pectoris (ANGIPECYR), a heart attack or myocardial infarction (HEARTATYR), or any other kind of heart condition or heart disease (other than coronary heart disease, angina pectoris, or heart attack) (HEARTCONYR).  Respondents for these inquiries were limited to those whom a doctor or other health professional had ever diagnosed as having the corresponding heart condition (ANGIPECEV, HEARTATTEV, and HEARTCONEV).   Also in 2002, the survey identified sample adults who had congestive heart failure during the past 12 months (CONHFAILYR), again limiting the inquiry to those sample adults who had ever been diagnosed with this condition (CONHFAILEV).  
+
+The 1977 survey included a single, broad question covering all types of heart disease or heart trouble during the past 12 months.  Specifically, persons age 20 and older were asked, "During the past 12 months, did you have heart disease or heart trouble?" (HEARTDISYR).
+]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Condition Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="CHOLHIGHYR" files="ExtractData" name="CHOLHIGHYR" intrvl="discrete" dcml="0">
+      <location StartPos="40" width="1" EndPos="40"/>
+      <labl>Had high cholesterol, past 12 months</labl>
+      <txt><![CDATA[For sample adults, and sample children ages 6-17 in 2012, CHOLHIGHYR indicates whether the person had high cholesterol during the past 12 months.   Please see Comparability and Universe tabs for changes in the universe between samples.]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Condition Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="DIABETICEV" files="ExtractData" name="DIABETICEV" intrvl="discrete" dcml="0">
+      <location StartPos="41" width="1" EndPos="41"/>
+      <labl>Ever told had diabetes</labl>
+      <txt><![CDATA[DIABETICEV identifies sample children and sample adults who had ever been diagnosed with "diabetes or sugar diabetes" by a doctor or other health professional.
+
+The format of the questions about diabetes differed for children and adults.  For children, respondents were shown a flashcard listing several chronic conditions (including diabetes) and asked, "Looking at this list, has a doctor or health professional ever told you that [person] had any of these conditions?"  For adults, the question was, "Have you ever been told by a doctor or health professional that you have diabetes or sugar diabetes?"  For women, the question was preceded by the phrase, "Other than during pregnancy" (to exclude cases of gestational diabetes present only during pregnancy).
+
+The range of responses recognized also differed for children and adults.  For children, responses were a dichotomous yes and no (or mentioned and not mentioned).  For adults, there was a third option, "Borderline."  Borderline diabetes was not defined in the survey documentation, but outside sources indicate this term refers to "impaired glucose tolerance" or "impaired fasting glucose."  In recent years, the term "pre-diabetes" has increasingly displaced the term "borderline diabetes."
+
+Definitions of Diabetes
+
+The Field Representative's Manual for 1997-2000 states, "Do not include self-diagnosed diabetes, pre-diabetes, high sugar, or any condition other than 'diabetes' or 'sugar diabetes.'  Do NOT include a doctor's diagnosis of 'gestational diabetes' or diabetes present only when a woman is pregnant."  These directions were not routinely read to respondents and were contradicted by the survey form itself, with its inclusion of the "borderline" option (which overlaps with "pre-diabetes" and "high sugar").
+
+Beginning in 2001, the Manual included the following definition of diabetes: "Diabetes is a chronic disorder of carbohydrate metabolism involving insulin.  Symptoms include elevated sugar in the urine and the blood, excessive urination, thirst, hunger, weight loss, and itching."  This definition was not routinely shared with respondents.
+
+
+Other Diabetes-Related Variables
+
+Some diabetes-related variables, such as DIABETICEV, were included in the National Health Interview Survey (NHIS) every year, beginning in 1997.  From 1997 forward, the NHIS included questions about age at first diagnosis of diabetes (DIABETICAGE) for adult respondents who reported a diabetes diagnosis (other than "borderline.")  Similarly, beginning in 1997, the survey consistently asked whether persons ever diagnosed with diabetes were now taking insulin (INSULIN) or were now taking diabetic pills (DIAPILLS).  
+
+Other diabetes-related questions were periodically included in the survey, particularly in 1999 and 2003.  The Manual for 2003 reported that the additional diabetes questions in that year were sponsored by the National Institute(s) of Health.
+  
+One group of the "periodic" diabetes questions collect further information on the time elapsed since first diagnosis of the illness.  These include:
+  
+Years since first diagnosed with diabetes (DIAYRSAGO, in 1999-2005) 
+Diabetes diagnosed in past 12 months (DIAGNOSYR, in 1999) 
+Months ago, within year, diabetes diagnosed (DIAGNOSYRMO, in 1999) 
+
+A second group of "periodic" diabetes variables relate to the hemoglobin A1C test, a blood test which provides information about how high an individual's blood sugar level has been over the past 3 months.  These variables include:
+
+Ever heard of hemoglobin A1C (DIA1CKNOW in 1999, 2003) 
+Number exams for A1C hemoglobin, past 12 months (DIA1CEXAMYR, in 1999, 2003)
+Last A1C hemoglobin level (DIA1CLEVEL, in 2003)
+Safe A1C hemoglobin level, according to doctor (DIA1CSAFE, in 2003) 
+
+A third group of "periodic" diabetes-related variables focus on the frequency of checking blood glucose levels.  These variables include:
+
+Times per day check blood for glucose (DIAGLUCDAY, in 2003)
+How often check blood for glucose: Time period (DIAGLUCTP, in 2003) 
+How often check blood for glucose: Number of units (DIAGLUCNO, in 2003) 
+
+A fourth group of "periodic" diabetes-related variables are concerned with the frequency of checking for foot sores.  These variables include:
+
+Number exams for foot sores, past 12 months (DIAFTEXAMYR, in 1999, 2003)
+Times per week check feet for sores (DIAFTEXAMWK, in 2003)
+How often check feet for sores: Time period (DIAFTEXAMTP, in 2003)
+How often check feet for sores: Number of units (DIAFTEXAMNO, in 2003) 
+
+A fifth group of "periodic" diabetes-related variables relate to eye examinations and eye diseases linked to diabetes.  These variables include:
+
+Months since last eye exam with pupils dilated (DIAEYEXAMO, in 1999, 2002-2003)
+Ever told had diabetic retinopathy (DIARETINEV, in 2002) 
+Had diabetic retinopathy, past 12 months (DIARETINYR, in 2002)
+
+The last group of "periodic" diabetes-related variables concern contact with health professionals for the treatment and management of diabetes.  These variables include:
+
+Seeing one doctor for diabetes (DIAONEDR, in 2003) Number times saw doctor for diabetes, past 12 months (DIADRYRNO, in 2003) 
+Number times saw nurse/dietician for diabetes, past 12 months
+(DIANURSYRNO, in 2003) 
+Ever took class in diabetes management (DIACLASS, in 1999)
+]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No or not mentioned</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes or mentioned</labl>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl>Borderline</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Condition Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="HEARTCONEV" files="ExtractData" name="HEARTCONEV" intrvl="discrete" dcml="0">
+      <location StartPos="42" width="1" EndPos="42"/>
+      <labl>Ever told had heart condition/disease</labl>
+      <txt><![CDATA[HEARTCONEV identifies sample adults whom a doctor or other health professional ever diagnosed as having any kind of heart condition or disease other than coronary heart disease, angina pectoris, or a heart attack (myocardial infarction).   In the 2002 and 2007 surveys, persons who acknowledged ever being diagnosed with any kind of heart disease other than coronary heart disease, angina pectoris, or a heart attack were asked whether they had this condition during the past 12 months (HEARTCONYR).
+
+The Field Representative's Manual for 1997-2000 specifies some of the conditions that might be included under this heading: "Include as heart disease or heart condition any of the following: heart failure, chronic heart condition, rheumatic heart disease, atrial or mitral valve disease damage, etc."  
+
+Related Variables
+
+In 1997 and subsequent years, the survey collected information from sample adults about a number of specific conditions related to heart disease.  In 1997 forward, sample adults were asked whether they were ever told by a doctor or other health professional that they had angina pectoris (ANGIPECEV).  Sample adults were also consistently asked whether they had ever been diagnosed with a heart attack or myocardial infarction (HEARTATTEV) or with coronary heart disease (CHEARTDIEV).  In 2002 and 2007, follow-up questions for those giving affirmative answers covered whether sample adults had angina pectoris (ANGIPECYR), a heart attack (HEARTATYR), or coronary heart disease (CHEARTDIYR) during the past 12 months.  The 1999 survey collected information on age when first diagnosed with a heart attack (HEARTATAGE). 
+
+In 1999 and 2002, the survey collected information on whether sample adults were ever diagnosed with congestive heart failure (CONHFAILEV) and, in 2002, about whether they had congestive heart failure during the past 12 months (CONHFAILYR).
+
+The 1977 survey included a single, broad question covering all types of heart disease or heart trouble.  Specifically, persons age 20 and older were asked, "During the past 12 months, did you have heart disease or heart trouble?" (HEARTDISYR).
+
+For sample children, from 1997 forward, information was collected on whether the child was ever diagnosed with congenital heart disease (CONGHARTEV) or with some other (non-congenital) heart condition (NONCONHARTEV).
+]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Condition Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="HEPATEV" files="ExtractData" name="HEPATEV" intrvl="discrete" dcml="0">
+      <location StartPos="43" width="1" EndPos="43"/>
+      <labl>Ever had hepatitis</labl>
+      <txt><![CDATA[HEPATEV identifies sample adults (and, in 1989, sample children) who ever had hepatitis.  The question wording, "Have you ever had hepatitis?," did not specify that the condition had to be diagnosed by a doctor or other health professional. 
+ 
+ Hepatitis, which was not defined in the survey documentation, is an inflammation of the liver caused by a viral infection.]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Condition Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="HYPERTENYR" files="ExtractData" name="HYPERTENYR" intrvl="discrete" dcml="0">
+      <location StartPos="44" width="1" EndPos="44"/>
+      <labl>Had hypertension, past 12 months</labl>
+      <txt><![CDATA[HYPERTENYR indicates whether persons had hypertension or high blood pressure during the past 12 months.  In 1977, this information was collected for all persons age 20 and older; in 2002 and 2007, it was collected only from sample adults age 18+ who were ever diagnosed by a doctor or other health professional as having hypertension (HYPERTENEV); in 2012 sample children ages 6-17 were also included.  Please see the Comparability and Universe tabs for changes in the universe between samples.
+
+The notes in the Codebook for 1977 state that these data "were collected for classification purposes only and not to ascertain prevalence estimates."
+
+In 2002 and 2007, respondents who received the question associated with HYPERTENYR were also asked about whether they were ever told on two or more different visits that they had hypertension (HYP2TIME).]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Condition Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="KIDNEYWKYR" files="ExtractData" name="KIDNEYWKYR" intrvl="discrete" dcml="0">
+      <location StartPos="45" width="1" EndPos="45"/>
+      <labl>Told had weak/failing kidneys, past 12 months</labl>
+      <txt><![CDATA[KIDNEYWKYR identifies sample adults whom a doctor or other health professional had diagnosed as having weak or failing kidneys during the past 12 months.  Respondents were instructed to exclude "kidney stones, bladder infections, or incontinence."
+
+In 1999, a separate question identified sample adults whom a doctor or other health professional had diagnosed as having kidney stones in the past 12 months (KIDNYSTONYR).   In 2002 and 2007, sample adults who had ever been told by a doctor or other health professional that they had urinary problems (such as incontinence, frequent or slow urination, or infections) were identified (URINPROBEV).   Those identified as ever having such urinary problems were asked whether they had such problems during the past 12 months (URINPROBYR).]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Condition Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="LIVERCONYR" files="ExtractData" name="LIVERCONYR" intrvl="discrete" dcml="0">
+      <location StartPos="46" width="1" EndPos="46"/>
+      <labl>Told had liver condition, past 12 months</labl>
+      <txt><![CDATA[LIVERCONYR identifies sample adults whom a doctor or other health professional had diagnosed with "any kind of liver condition" during the past 12 months.
+
+For 2000 forward, sample adults were separately asked if they ever had hepatitis (HEPATEV), an inflammation of the liver caused by a virus.]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Condition Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="HYP2TIME" files="ExtractData" name="HYP2TIME" intrvl="discrete" dcml="0">
+      <location StartPos="47" width="1" EndPos="47"/>
+      <labl>Ever told had hypertension on 2+ visits</labl>
+      <txt><![CDATA[For sample persons or adults aged 18 and over who were ever told they had hypertension or high blood pressure, HYP2TIME reports if they were told they had high blood pressure or hypertension on two or more DIFFERENT visits. 
+
+This variable was first introduced in the 1985. Please use the IPUMS NHIS drop down menu and search functions for other related variables.]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Hypertension Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="IMSPSTL" files="ExtractData" name="IMSPSTL" intrvl="discrete" dcml="0">
+      <location StartPos="48" width="1" EndPos="48"/>
+      <labl>Still have weakened immune system</labl>
+      <txt><![CDATA[For sample adults aged 18 and older who have ever been told by a doctor/other health professional that they had a weakened immune system, IMSPSTL reports whether the respondent still has a weakened immune system.
+
+This variable is part of the Adult Immunosuppression (AIS) section which consists of seven questions sponsored by the National Center for Immunization and Respiratory Diseases (NCIRD, CDC). The purpose of the questions is to estimate the number and percentage of adults with weakened immune systems--both lifetime (IMSUPEV) and current (IMSPSL)--and to ask about possible reasons for their immune compromised state (i.e., from medications (IMSPMED), chronic illnesses or serious health conditions (IMSPCHC, IMSPSHC), cancer (IMSPCAN), or repeated infections or colds (IMSPCLD). For related variables and more information about this supplement, please use the IPUMS NHIS search function and drop-down menus.]]></txt>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <concept vocab="IPUMS">Immunosupression Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="IMSPMED" files="ExtractData" name="IMSPMED" intrvl="discrete" dcml="0">
+      <location StartPos="49" width="1" EndPos="49"/>
+      <labl>Medications/treatments weakened immune system, past 6 months</labl>
+      <txt><![CDATA[For sample adults aged 18 and older who have ever been told by a doctor/other health professional that they had a weakened immune system, IMSPMED reports whether in the past 6 months, the sample person has taken prescription medication or has had any medical treatments that a doctor or other health professional told him/her would weaken his/her immune system. Examples include steroid or corticosteroid pills, such as prednisone, or other oral or injected medications for treating many types of autoimmune conditions or certain cancers.
+
+This variable is part of the Adult Immunosuppression (AIS) section which consists of seven questions sponsored by the National Center for Immunization and Respiratory Diseases (NCIRD, CDC). The purpose of the questions is to estimate the number and percentage of adults with weakened immune systems--both lifetime (IMSUPEV) and current (IMSPSL)--and to ask about possible reasons for their immune compromised state (i.e., from medications (IMSPMED), chronic illnesses or serious health conditions (IMSPCHC, IMSPSHC), cancer (IMSPCAN), or repeated infections or colds (IMSPCLD). For related variables and more information about this supplement, please use the IPUMS NHIS search function and drop-down menus.]]></txt>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <concept vocab="IPUMS">Immunosupression Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="IMSPCHC" files="ExtractData" name="IMSPCHC" intrvl="discrete" dcml="0">
+      <location StartPos="50" width="1" EndPos="50"/>
+      <labl>Current health condition weakens immune system</labl>
+      <txt><![CDATA[For sample adults aged 18 and older who have ever been told by a doctor/other health professional that they had a weakened immune system, IMSPCHC reports whether the respondent currently has a health condition that a doctor or other health professional told him/her that it would weaken the immune system, even without related medications or treatments. Examples include certain kinds of leukemia, lymphoma, or HIV infection.
+
+This variable is part of the Adult Immunosuppression (AIS) section which consists of seven questions sponsored by the National Center for Immunization and Respiratory Diseases (NCIRD, CDC). The purpose of the questions is to estimate the number and percentage of adults with weakened immune systems--both lifetime (IMSUPEV) and current (IMSPSL)--and to ask about possible reasons for their immune compromised state (i.e., from medications (IMSPMED), chronic illnesses or serious health conditions (IMSPCHC, IMSPSHC), cancer (IMSPCAN), or repeated infections or colds (IMSPCLD). For related variables and more information about this supplement, please use the IPUMS NHIS search function and drop-down menus.]]></txt>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Yes</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>No</labl>
+      </catgry>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <concept vocab="IPUMS">Immunosupression Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="SMOKFREQNOW" files="ExtractData" name="SMOKFREQNOW" intrvl="discrete" dcml="0">
+      <location StartPos="51" width="1" EndPos="51"/>
+      <labl>Smoke every day, some days, or not at all</labl>
+      <txt><![CDATA[SMOKFREQNOW reports the responses to the question, "Do you NOW smoke cigarettes every day, some days or not at all?" This question was asked of sample adults who reported having ever smoked 100 cigarettes in their entire lifetime (SMOKEV) and for 1991 and 1992, had a known response for whether they currently smoked. 
+
+Definitions and Instructions
+
+The 1997-2000 Field Representative's Manuals stated, "The questions in this section concern cigarette smoking only. Accept whatever the Sample Adult reports, except if it is volunteered that he/she smoked a pipe, cigars of any kind, marijuana, hashish, 'crack', or the like." The Manuals for 2001 forward define a cigarette as "anything the respondent reports except cigars or any kind of marijuana."  The 1991 and 1992 had approximately the same definition. 
+
+Specifically concerning the question associated with SMOKFREQNOW, the Manuals for 1997-2000 instructed interviewers, "If the sample adult gives an answer which does not match the categories read in the question, reread the question emphasizing the wording of the answer categories."
+
+
+Related Variables
+
+In 1970, 1987, 1992,  and 1997 forward respondents were asked about the age at which they first started smoking "fairly regularly" (SMOKAGEREG).
+
+Depending on their response in SMOKFREQNOW (Smoke every day, some days, or not at all), respondents were also able to receive one or more of the following questions in 1991-1995 and from 1997 forward:
+
+"On the average, how many cigarettes do you now smoke a day?" (CIGSDAY1)
+"On how many of the past 30 days did you smoke a cigarette?" (CIGDAYMO)
+"On the average, when you smoked during the past 30 days, about how many cigarettes did you smoke a day?" (CIGSDAY2)
+
+The variable CIGSDAY (Average number of cigarettes smoked per day: Current Smokers) is available for 1970, 1974, 1976-1977, 1985, and 1997 forward.
+]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>Not at all</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Some days</labl>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl>Every day</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Smoking Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="SMOKFREQX" files="ExtractData" name="SMOKFREQX" intrvl="discrete" dcml="0">
+      <location StartPos="52" width="1" EndPos="52"/>
+      <labl>How often smoke cigarettes</labl>
+      <txt><![CDATA[For sample adults 18 and older who have not smoked or don't know if smoked 100 or more cigarettes in their lifetime but who have smoked at least one cigarette (SMOKEPUFFEV) and reported an age when they first smoked a cigarette (SMOKEFAGE), SMOKFREQX reports how often the sample adult now smokes cigarettes.]]></txt>
+      <catgry>
+        <catValu>0</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>1</catValu>
+        <labl>Every day</labl>
+      </catgry>
+      <catgry>
+        <catValu>2</catValu>
+        <labl>Some days</labl>
+      </catgry>
+      <catgry>
+        <catValu>3</catValu>
+        <labl>Not at all</labl>
+      </catgry>
+      <catgry>
+        <catValu>7</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>8</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>9</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Smoking Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+    <var ID="CIGSLONGFS" files="ExtractData" name="CIGSLONGFS" intrvl="discrete" dcml="0">
+      <location StartPos="53" width="2" EndPos="54"/>
+      <labl>Cigarettes per day smoked, longest smoking period (former smokers)</labl>
+      <txt><![CDATA[For sample adults aged 18 and older who are former smokers and whose daily number of cigarettes smoked when they were regular smokers varied, CIGSLONGFS reports the average number of cigarettes that respondent smoked per day during the longest period that they smoked.]]></txt>
+      <catgry>
+        <catValu>00</catValu>
+        <labl>NIU</labl>
+      </catgry>
+      <catgry>
+        <catValu>01</catValu>
+        <labl>1</labl>
+      </catgry>
+      <catgry>
+        <catValu>02</catValu>
+        <labl>2</labl>
+      </catgry>
+      <catgry>
+        <catValu>03</catValu>
+        <labl>3</labl>
+      </catgry>
+      <catgry>
+        <catValu>04</catValu>
+        <labl>4</labl>
+      </catgry>
+      <catgry>
+        <catValu>05</catValu>
+        <labl>5</labl>
+      </catgry>
+      <catgry>
+        <catValu>06</catValu>
+        <labl>6</labl>
+      </catgry>
+      <catgry>
+        <catValu>07</catValu>
+        <labl>7</labl>
+      </catgry>
+      <catgry>
+        <catValu>08</catValu>
+        <labl>8</labl>
+      </catgry>
+      <catgry>
+        <catValu>09</catValu>
+        <labl>9</labl>
+      </catgry>
+      <catgry>
+        <catValu>10</catValu>
+        <labl>10</labl>
+      </catgry>
+      <catgry>
+        <catValu>11</catValu>
+        <labl>11</labl>
+      </catgry>
+      <catgry>
+        <catValu>12</catValu>
+        <labl>12</labl>
+      </catgry>
+      <catgry>
+        <catValu>13</catValu>
+        <labl>13</labl>
+      </catgry>
+      <catgry>
+        <catValu>14</catValu>
+        <labl>14</labl>
+      </catgry>
+      <catgry>
+        <catValu>15</catValu>
+        <labl>15</labl>
+      </catgry>
+      <catgry>
+        <catValu>16</catValu>
+        <labl>16</labl>
+      </catgry>
+      <catgry>
+        <catValu>17</catValu>
+        <labl>17</labl>
+      </catgry>
+      <catgry>
+        <catValu>18</catValu>
+        <labl>18</labl>
+      </catgry>
+      <catgry>
+        <catValu>19</catValu>
+        <labl>19</labl>
+      </catgry>
+      <catgry>
+        <catValu>20</catValu>
+        <labl>20</labl>
+      </catgry>
+      <catgry>
+        <catValu>21</catValu>
+        <labl>21</labl>
+      </catgry>
+      <catgry>
+        <catValu>22</catValu>
+        <labl>22</labl>
+      </catgry>
+      <catgry>
+        <catValu>23</catValu>
+        <labl>23</labl>
+      </catgry>
+      <catgry>
+        <catValu>24</catValu>
+        <labl>24</labl>
+      </catgry>
+      <catgry>
+        <catValu>25</catValu>
+        <labl>25</labl>
+      </catgry>
+      <catgry>
+        <catValu>26</catValu>
+        <labl>26</labl>
+      </catgry>
+      <catgry>
+        <catValu>27</catValu>
+        <labl>27</labl>
+      </catgry>
+      <catgry>
+        <catValu>28</catValu>
+        <labl>28</labl>
+      </catgry>
+      <catgry>
+        <catValu>29</catValu>
+        <labl>29</labl>
+      </catgry>
+      <catgry>
+        <catValu>30</catValu>
+        <labl>30</labl>
+      </catgry>
+      <catgry>
+        <catValu>31</catValu>
+        <labl>31</labl>
+      </catgry>
+      <catgry>
+        <catValu>32</catValu>
+        <labl>32</labl>
+      </catgry>
+      <catgry>
+        <catValu>33</catValu>
+        <labl>33</labl>
+      </catgry>
+      <catgry>
+        <catValu>34</catValu>
+        <labl>34</labl>
+      </catgry>
+      <catgry>
+        <catValu>35</catValu>
+        <labl>35</labl>
+      </catgry>
+      <catgry>
+        <catValu>36</catValu>
+        <labl>36</labl>
+      </catgry>
+      <catgry>
+        <catValu>37</catValu>
+        <labl>37</labl>
+      </catgry>
+      <catgry>
+        <catValu>38</catValu>
+        <labl>38</labl>
+      </catgry>
+      <catgry>
+        <catValu>39</catValu>
+        <labl>39</labl>
+      </catgry>
+      <catgry>
+        <catValu>40</catValu>
+        <labl>40</labl>
+      </catgry>
+      <catgry>
+        <catValu>41</catValu>
+        <labl>41</labl>
+      </catgry>
+      <catgry>
+        <catValu>42</catValu>
+        <labl>42</labl>
+      </catgry>
+      <catgry>
+        <catValu>43</catValu>
+        <labl>43</labl>
+      </catgry>
+      <catgry>
+        <catValu>44</catValu>
+        <labl>44</labl>
+      </catgry>
+      <catgry>
+        <catValu>45</catValu>
+        <labl>45</labl>
+      </catgry>
+      <catgry>
+        <catValu>46</catValu>
+        <labl>46</labl>
+      </catgry>
+      <catgry>
+        <catValu>47</catValu>
+        <labl>47</labl>
+      </catgry>
+      <catgry>
+        <catValu>48</catValu>
+        <labl>48</labl>
+      </catgry>
+      <catgry>
+        <catValu>49</catValu>
+        <labl>49</labl>
+      </catgry>
+      <catgry>
+        <catValu>50</catValu>
+        <labl>50</labl>
+      </catgry>
+      <catgry>
+        <catValu>51</catValu>
+        <labl>51</labl>
+      </catgry>
+      <catgry>
+        <catValu>52</catValu>
+        <labl>52</labl>
+      </catgry>
+      <catgry>
+        <catValu>53</catValu>
+        <labl>53</labl>
+      </catgry>
+      <catgry>
+        <catValu>54</catValu>
+        <labl>54</labl>
+      </catgry>
+      <catgry>
+        <catValu>55</catValu>
+        <labl>55</labl>
+      </catgry>
+      <catgry>
+        <catValu>56</catValu>
+        <labl>56</labl>
+      </catgry>
+      <catgry>
+        <catValu>57</catValu>
+        <labl>57</labl>
+      </catgry>
+      <catgry>
+        <catValu>58</catValu>
+        <labl>58</labl>
+      </catgry>
+      <catgry>
+        <catValu>59</catValu>
+        <labl>59</labl>
+      </catgry>
+      <catgry>
+        <catValu>60</catValu>
+        <labl>60</labl>
+      </catgry>
+      <catgry>
+        <catValu>61</catValu>
+        <labl>61</labl>
+      </catgry>
+      <catgry>
+        <catValu>62</catValu>
+        <labl>62</labl>
+      </catgry>
+      <catgry>
+        <catValu>63</catValu>
+        <labl>63</labl>
+      </catgry>
+      <catgry>
+        <catValu>64</catValu>
+        <labl>64</labl>
+      </catgry>
+      <catgry>
+        <catValu>65</catValu>
+        <labl>65</labl>
+      </catgry>
+      <catgry>
+        <catValu>66</catValu>
+        <labl>66</labl>
+      </catgry>
+      <catgry>
+        <catValu>67</catValu>
+        <labl>67</labl>
+      </catgry>
+      <catgry>
+        <catValu>68</catValu>
+        <labl>68</labl>
+      </catgry>
+      <catgry>
+        <catValu>69</catValu>
+        <labl>69</labl>
+      </catgry>
+      <catgry>
+        <catValu>70</catValu>
+        <labl>70</labl>
+      </catgry>
+      <catgry>
+        <catValu>71</catValu>
+        <labl>71</labl>
+      </catgry>
+      <catgry>
+        <catValu>72</catValu>
+        <labl>72</labl>
+      </catgry>
+      <catgry>
+        <catValu>73</catValu>
+        <labl>73</labl>
+      </catgry>
+      <catgry>
+        <catValu>74</catValu>
+        <labl>74</labl>
+      </catgry>
+      <catgry>
+        <catValu>75</catValu>
+        <labl>75</labl>
+      </catgry>
+      <catgry>
+        <catValu>76</catValu>
+        <labl>76</labl>
+      </catgry>
+      <catgry>
+        <catValu>77</catValu>
+        <labl>77</labl>
+      </catgry>
+      <catgry>
+        <catValu>78</catValu>
+        <labl>78</labl>
+      </catgry>
+      <catgry>
+        <catValu>79</catValu>
+        <labl>79</labl>
+      </catgry>
+      <catgry>
+        <catValu>80</catValu>
+        <labl>80</labl>
+      </catgry>
+      <catgry>
+        <catValu>81</catValu>
+        <labl>81</labl>
+      </catgry>
+      <catgry>
+        <catValu>82</catValu>
+        <labl>82</labl>
+      </catgry>
+      <catgry>
+        <catValu>83</catValu>
+        <labl>83</labl>
+      </catgry>
+      <catgry>
+        <catValu>84</catValu>
+        <labl>84</labl>
+      </catgry>
+      <catgry>
+        <catValu>85</catValu>
+        <labl>85</labl>
+      </catgry>
+      <catgry>
+        <catValu>86</catValu>
+        <labl>86</labl>
+      </catgry>
+      <catgry>
+        <catValu>87</catValu>
+        <labl>87</labl>
+      </catgry>
+      <catgry>
+        <catValu>88</catValu>
+        <labl>88</labl>
+      </catgry>
+      <catgry>
+        <catValu>89</catValu>
+        <labl>89</labl>
+      </catgry>
+      <catgry>
+        <catValu>90</catValu>
+        <labl>90</labl>
+      </catgry>
+      <catgry>
+        <catValu>91</catValu>
+        <labl>91</labl>
+      </catgry>
+      <catgry>
+        <catValu>92</catValu>
+        <labl>92</labl>
+      </catgry>
+      <catgry>
+        <catValu>93</catValu>
+        <labl>93</labl>
+      </catgry>
+      <catgry>
+        <catValu>94</catValu>
+        <labl>94+</labl>
+      </catgry>
+      <catgry>
+        <catValu>95</catValu>
+        <labl>95+</labl>
+      </catgry>
+      <catgry>
+        <catValu>96</catValu>
+        <labl>94</labl>
+      </catgry>
+      <catgry>
+        <catValu>97</catValu>
+        <labl>Unknown-refused</labl>
+      </catgry>
+      <catgry>
+        <catValu>98</catValu>
+        <labl>Unknown-not ascertained</labl>
+      </catgry>
+      <catgry>
+        <catValu>99</catValu>
+        <labl>Unknown-don't know</labl>
+      </catgry>
+      <concept vocab="IPUMS">Smoking Variables -- PERSON</concept>
+      <varFormat schema="other" type="numeric"/>
+    </var>
+  </dataDscr>
+</codeBook>
