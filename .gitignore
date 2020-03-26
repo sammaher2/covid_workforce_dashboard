@@ -43,6 +43,7 @@ vignettes/*.pdf
 
 
 cache/cps_co.Rdata
+cache/nhis_data.Rdata
 cache/cps_data.Rdata
 inputs/cps_00005.dat
 inputs/cps_00005.dat.gz

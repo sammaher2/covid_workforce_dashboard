@@ -29,7 +29,8 @@ init.pacs(c("tidyverse",      #shortcut to many useful packages (eg, dplyr, ggpl
 conflict_prefer("filter", "dplyr")
 conflict_prefer("between", "dplyr")
 conflict_prefer("ggsave", "ggplot2")
-
+conflict_prefer("vars", "dplyr")
+conflict_prefer("year", "lubridate")
 options(scipen = 999)
 
 #########################

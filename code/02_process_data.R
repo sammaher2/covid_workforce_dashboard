@@ -1,11 +1,12 @@
+#SAMMMMMMMM
 
 #Calculating indicators for school aged kids and potential caregivers in long
-if(!file.exists("cache/cps_co.Rdata")){
+#if(!file.exists("cache/cps_co.Rdata")){
   special.locations <- ind_refs %>% select(-dplyr::starts_with("ind")) %>% names()
-  
+
   cps_recoded <- 
     bind_cols(
-      cps_data %>%
+     cps_data %>%
         mutate(child_0_2=ifelse(dplyr::between(age,0,2),1,0),
                child_3_5=ifelse(dplyr::between(age,3,5),1,0),
                child_6_11=ifelse(dplyr::between(age,6,11),1,0),
@@ -22,7 +23,8 @@ if(!file.exists("cache/cps_co.Rdata")){
                 transmute(parent=as.numeric((relate %in% c(101,201,202,203,1113,1114,1116,1117)) & !!as.name(x)==1)) %>%
                 rename_all(~str_c(.,"_",x))
             }) %>%
-      mutate_all(~ifelse(is.na(.),0,.)))%>%
+      mutate_all(~ifelse(is.na(.),0,.))
+    )%>%
     group_by(hrhhid,hrhhid2,mish)
   
   
@@ -99,4 +101,4 @@ if(!file.exists("cache/cps_co.Rdata")){
   
   
   save(full_long,hh_long,file="cache/cps_co.Rdata")
-}
+#}

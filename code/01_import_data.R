@@ -13,8 +13,6 @@ data_in <- read_ipums_micro(ddi="inputs/cps_00006.xml",
                             data_file = "inputs/cps_00006.dat") %>%
   rename_all(str_to_lower)
 
-#write.csv(data_in, "scratch/data_in.csv")
-
 #Subset only CPS monthly data 
 cps_data <- data_in %>%
   filter((asecflag!=1 | is.na(asecflag)),year>2017) %>%
