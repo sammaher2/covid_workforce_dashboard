@@ -2,30 +2,81 @@
 
 
 nhis_2018 <- nhis_recorded %>% 
-     filter(year == 2018) %>% 
-     select(-c(description, essential, critical_sub, hospital, hospitals_plus, nursing_facilities) )
+     filter(year == 2018) %>%    #make sure to remove variables they didn't have for this year
+     select(-c(description, essential, critical_sub, hospital, hospitals_plus, nursing_facilities, coronary_dis,immunodef)) %>%
+     mutate(risk_sum = heart_cond + hypertension + diabetes +
+            cancer + hepatic_dis+ hepatitus+ asthma+
+            high_cholesterol + ever_smoked + bmi) %>%
+    mutate(over60_plus_risk = ifelse(risk_sum >= 1, 1, 0)) %>%
+      select(-risk_sum)
 
-colnames(nhis_2018)[10:length(colnames(nhis_2018))]<-paste0("risk.",colnames(nhis_2018)[10:length(colnames(nhis_2018))])
+
+colnames(nhis_2018)[9:length(colnames(nhis_2018))]<-paste0("risk.",colnames(nhis_2018)[9:length(colnames(nhis_2018))])
 
 write.csv(nhis_2018, "outputs/nhis_2018_raw.csv")   #this gets things in the right formart and I don't know why, need to fix
 nhis_2018 <- read.csv("outputs/nhis_2018_raw.csv")    #same here
 
+nhis_2018_occ <- nhis_2018 %>%
+  select(region, ind, occ, perweight) %>%
+  pivot_longer(cols = "occ", names_to = "occ") %>%
+  mutate(occ = value) %>%
+  select(-value) %>%
+  group_by(region, ind, occ) %>%
+  count(people_ind = sum(perweight)) %>%
+  mutate(num_samp_ind = n)  %>%
+  select(-n) %>%
+  mutate(reg.ind.occ = paste(region, ind, occ, sep = "."))
+
+
 nhis_2018_final <- nhis_2018 %>%
-  #mutate(risk.bmi = ifelse(risk.bmi == is.na(risk.bmi), 0, risk.bmi)) %>%
-  #mutate_at(vars(starts_with("risk")), as.integer(.)) %>%
-  select(-risk.coronary_dis)  %>% #variable not available for 2018
-  mutate_at(vars(starts_with("risk")), ~ifelse(.!=0, .* perweight, 0)) %>%
+   mutate_at(vars(starts_with("risk")), ~ifelse(.!=0, .* perweight, 0)) %>%
+  select(-sampweight) %>%
   pivot_longer(cols = starts_with("risk"), names_to = "risk.factor") %>%
-  filter(value != 0) %>%  #
-  #select(-value) %>%
-  group_by(region, ind, occ, risk.factor) %>%
-  summarize(people = sum(perweight))
+  filter(value != 0) %>%  
+  group_by(region, ind, occ, risk.factor) %>% 
+  count(people_ind_risk = sum(perweight)) %>%
+  mutate(num_samp_ind_risk = n)  %>%
+  select(-n) %>%
+  mutate(reg.ind.occ = paste(region, ind, occ, sep = "."))
+  
+
+write.csv(nhis_2018_occ, "outputs/nhis_2018_temp.csv")
+nhis_2018_occ <- read.csv("outputs/nhis_2018_temp.csv")
+write.csv(nhis_2018_final, "outputs/nhis_2018_final.csv")
+nhis_2018_final <- read.csv("outputs/nhis_2018_final.csv")
+  
+  
+
+nhis_2018_final <- nhis_2018_final %>%
+             left_join(.,nhis_2018_occ %>% select(reg.ind.occ, num_samp_ind, people_ind), by=c("reg.ind.occ"="reg.ind.occ")) %>%
+            select(-X)
+
 
 write.csv(nhis_2018_final, "outputs/nhis_2018_final.csv")
 
+######### TEST ###############
 
 
 
+
+
+# #Make Keys
+# key_reg <- nhis_recorded  %>%
+#             select(region) %>%
+#             unique() %>%
+#             mutate(region_name = ifelse(region==1, "Northeast", region),
+#                    region_name = ifelse(region==2, "North Central/Midwest",region_name),
+#                    region_name = ifelse(region==3, "South",region_name),
+#                    region_name = ifelse(region==4, "West",region_name) 
+#             ) %>%
+#             arrange(region)
+# 
+# write.csv(key_reg, "inputs/key_reg.csv")
+# write.csv(occ_codes_nhis, "inputs/key_occ.csv")
+# write.csv(ind_codes_nhis, "inputs/key_ind.csv")
+# 
+# 
+# write.csv(c(occ_codes_nhis, ind_codes_nhis, key_reg), c("inputs/key_occ.csv", "inputs/key_ind.csv", "inputs/key_reg.csv"))
 
 
 

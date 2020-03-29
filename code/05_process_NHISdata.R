@@ -74,21 +74,38 @@ library(expss)
                           hospitals_plus = ifelse(is.na(hospitals_plus) == TRUE,0,1),
                           nursing_facilities = ifelse(is.na(nursing_facilities) == TRUE,0,1)
                           ) %>%
-               rename(ind = indstrn104, occ = occupn104) %>%
-               mutate(over60_plus_risk = if_else(over60 == 1 & any(heart_cond ==1,
-                                                              coronary_dis ==1,
-                                                              hypertension ==1,
-                                                              diabetes ==1,
-                                                              cancer ==1,
-                                                              hepatic_dis==1,
-                                                              kidney_dis ==1,
-                                                              #smoker ==1,
-                                                              immunodef ==1,
-                                                              hepatitus ==1,
-                                                              asthma ==1,
-                                                              high_cholesterol ==1,
-                                                              ever_smoked ==1,
-                                                              bmi ==1), 1, 0))
+               rename(ind = indstrn104, occ = occupn104) #%>%
+               # mutate(risk_sum = sum(heart_cond, coronary_dis, hypertension, diabetes,
+               #                       cancer, hepatic_dis, immunodef, hepatitus, asthma,
+               #                       high_cholesterol, ever_smoked, bmi)) %>%
+               # mutate(over60_plus_risk = ifelse(risk_sum >= 1, 1, 0)) %>%
+               # select(-risk_sum)
+               # 
+               # 
+               
+               
+               
+               
+               
+               
+               
+              
+      # mutate(over60_plus_risk = if_else(over60 == 1 & any(heart_cond ==1,
+      #                                                         coronary_dis ==1,
+      #                                                         hypertension ==1,
+      #                                                         diabetes ==1,
+      #                                                         cancer ==1,
+      #                                                         hepatic_dis==1,
+      #                                                         kidney_dis ==1,
+      #                                                         #smoker ==1,
+      #                                                         immunodef ==1,
+      #                                                         hepatitus ==1,
+      #                                                         asthma ==1,
+      #                                                         high_cholesterol ==1,
+      #                                                         ever_smoked ==1,
+      #                                                         bmi ==1), 1, 0)) %>%
+      #           mutate(test = if_else(over60 == 1 & any(heart_cond ==1,
+      #                                                   coronary_dis ==1), 1, 0))
           
    
    
