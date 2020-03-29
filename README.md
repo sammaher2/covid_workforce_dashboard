@@ -4,7 +4,10 @@ This repo extends the analysis in The Impact of School Closure for COVID-19 on t
 
 #US COVID-19 Risk by Industry
 
-This repo breaks down the working poulation by industry and occupation and summarizes health risk factors within in each group. 
+This repo breaks down the working poulation by industry and occupation and summarizes health risk factors within in each group.
+
+The data for the industry analysis can be downloaded from here:
+https://drive.google.com/drive/folders/1klpB0rWiJaNCZzEuFy-5nhsElQKy6UXB?usp=sharing
 
 ## Data
 
