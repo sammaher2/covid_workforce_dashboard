@@ -31,7 +31,11 @@ conflict_prefer("between", "dplyr")
 conflict_prefer("ggsave", "ggplot2")
 conflict_prefer("vars", "dplyr")
 conflict_prefer("year", "lubridate")
+conflict_prefer("recode", "dplyr")
+conflict_prefer("na_if", "dplyr")
+
 options(scipen = 999)
+
 
 #########################
 #Loading project helper functions (all scripts within folder)
@@ -44,6 +48,14 @@ folder.setup()
 if(!file.exists("inputs/cps_00005.dat.gz")){
   stop("Please download the data from: https://drive.google.com/drive/folders/1YtuHk_iK5QBj3IM_NhdWrL4BpT3ckQBI?usp=sharing")
 
+} else {
+  source("code/00-build.R")
+}
+
+#Check if data has been downloaded for HIS
+if(!file.exists("inputs/inputs/nhis_00002.dat.gz")){
+  stop("Please download the data from: https://drive.google.com/drive/folders/1IalDjovcZ4Hc9tRuDP3O8k7LK1zG9evL?usp=sharing")
+  
 } else {
   source("code/00-build.R")
 }

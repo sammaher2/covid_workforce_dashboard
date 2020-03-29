@@ -22,6 +22,7 @@
 
 SM_data
 scratch
+code/scratch_SM
 
 # produced vignettes
 vignettes/*.html
@@ -53,3 +54,5 @@ inputs/cps_00006.dat.gz
 .RDataTmp
 scratch/data_in.csv
 scratch/data_in2.csv
+
+inputs/nhis_00002.dat

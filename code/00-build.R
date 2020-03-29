@@ -1,7 +1,7 @@
 #This script serves as a makefile for the project
 
 
-##################################################
+##########################################CPS DATA
 #Load preliminaries
 if(!file.exists("cache/occ_codes.Rdata")){
   get_cps_occ_codes()
@@ -29,19 +29,18 @@ if(!file.exists("cache/cps_co.Rdata")){
 }
 load("cache/cps_co.Rdata")
   
-###########NHIS DATA
+
+
+##################################################NHIS DATA
 if(!file.exists("cache/ind_codes_nhis.Rdata")){
   get_nhis_ind_codes()
 }
 load("cache/ind_codes_nhis.Rdata")
 
 if(!file.exists("cache/occ_codes_nhis.Rdata")){
-  get_nhis_ind_codes()
+  get_nhis_occ_codes()
 }
 load("cache/occ_codes_nhis.Rdata")
-
-
-
 
 
 
