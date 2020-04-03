@@ -1,7 +1,7 @@
 library(expss)
 
 #if(!file.exists("cache/cps_co.Rdata")){
-  special.locations <- ind_refs_nhis %>% select(-dplyr::starts_with("ind")) %>% names()
+ # special.locations <- ind_refs_nhis %>% select(-dplyr::starts_with("ind")) %>% names()
 
   
   
@@ -31,7 +31,8 @@ library(expss)
                bmi = ifelse(bmi > 25.5,1, 0),
                ever_smoked =ifelse(smokev == 2,1,0),
                child_0_9 = ifelse(yngch <= 9 | eldch <=9,1,0),
-               child_0_9 =ifelse(is.na(child_0_9) == TRUE, 0, child_0_9)
+               child_0_9 =ifelse(is.na(child_0_9) == TRUE, 0, child_0_9),
+               employed = ifelse(empstat == 10 | empstat == 11 | empstat == 20 | empstat == 21,1,0)
                          ) %>%
      #select(-c(ind,occ)) %>%
           select(-c(heartconev,cheartdiyr,hypertenyr,
@@ -41,7 +42,7 @@ library(expss)
             ybarcare, occ, ind, delaycost, imspstl,
             imspmed, imspchc, hyp2time, smokfreqx, 
             smokfreqnow, cigslongfs,bmicalc,smokev,
-            eldch, yngch,smoker, smokev)
+            eldch, yngch,smoker, smokev,empstat)
           ) %>%
                apply_labels(
                  over60 = "age 60 years or more",

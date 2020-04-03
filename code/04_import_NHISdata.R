@@ -2,14 +2,14 @@
 
 #############################
 #Extract zipped data extract from ipums
-if(!file.exists("inputs/nhis_00002.dat")){
-  gunzip("inputs/nhis_00002.dat.gz",remove=F)
+if(!file.exists("inputs/nhis_00003.dat")){
+  gunzip("inputs/nhis_00003.dat.gz",remove=F)
 }
 
 #################################
 #Read in data
-data_in2 <- read_ipums_micro(ddi="inputs/nhis_00002.xml",
-                            data_file = "inputs/nhis_00002.dat") %>%
+data_in2 <- read_ipums_micro(ddi="inputs/nhis_00003.xml",
+                            data_file = "inputs/nhis_00003.dat") %>%
     rename_all(str_to_lower)
 
 #write.csv(data_in2, "scratch/data_in2.csv")
