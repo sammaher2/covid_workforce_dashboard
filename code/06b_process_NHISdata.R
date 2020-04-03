@@ -27,11 +27,11 @@ write.csv(nhis_2016, "outputs/nhis_2016_raw.csv")   #this gets things in the rig
 nhis_2016 <- read.csv("outputs/nhis_2016_raw.csv")    #same here
 
 nhis_2016_occ <- nhis_2016 %>%
-  select(year, region, ind, occ, perweight) %>%
+  select(year, region, ind, occ, sampweight) %>%
   pivot_longer(cols = "occ", names_to = "occ") %>%
   mutate(occ = value) %>%  select(-value) %>%
   group_by(year, region, ind, occ) %>%
-  count(people_ind = sum(perweight)) %>%
+  count(people_ind = sum(sampweight)) %>%
   mutate(num_samp_ind = n)  %>%
   select(-n) %>%
   group_by(region,ind,occ) %>%
@@ -39,12 +39,12 @@ nhis_2016_occ <- nhis_2016 %>%
   mutate(reg.ind.occ = paste(region, ind, occ, sep = "."))
 
 nhis_2016_risk <- nhis_2016 %>%
-  mutate_at(vars(starts_with("risk")), ~ifelse(.!=0, .* perweight, 0)) %>%
-  select(-sampweight) %>%
+  mutate_at(vars(starts_with("risk")), ~ifelse(.!=0, .* sampweight, 0)) %>%
+  select(-perweight) %>%
   pivot_longer(cols = starts_with("risk"), names_to = "risk.factor") %>%
   filter(value != 0) %>%  
   group_by(year, region, ind, occ, risk.factor) %>% 
-  count(people_ind_risk = sum(perweight)) %>%
+  count(people_ind_risk = sum(sampweight)) %>%
   mutate(num_samp_ind_risk = n)  %>%
   select(-n) %>%
   group_by(region,ind,occ,risk.factor) %>%
@@ -62,7 +62,7 @@ nhis_2016_final <- nhis_2016_risk %>%
   left_join(.,nhis_2016_occ %>% select(reg.ind.occ, n_average_ind, ppl_average_ind), by=c("reg.ind.occ"="reg.ind.occ")) %>%
   select(-X)
 
-#write.csv(nhis_2018_final, "outputs/nhis_2012_2018.csv")
+write.csv(nhis_2016_final, "outputs/nhis_2016_final.csv")
 
 
 #write.csv(nhis_2018_final, "outputs/nhis_2018_final.csv")
