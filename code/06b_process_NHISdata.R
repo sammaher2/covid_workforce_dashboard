@@ -1,4 +1,4 @@
-#Pull and process only data from 2018
+#Pull and process only data from 2016 through 2018
 
 
 nhis_2016 <- nhis_recorded %>% 
