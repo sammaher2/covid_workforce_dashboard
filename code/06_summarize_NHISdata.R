@@ -4,11 +4,17 @@
 nhis_2018 <- nhis_recorded %>% 
      filter(year == 2018) %>%    #make sure to remove variables they didn't have for this year
      select(-c(description, essential, critical_sub, hospital, hospitals_plus, nursing_facilities, coronary_dis,immunodef)) %>%
-     mutate(risk_sum = heart_cond + hypertension + diabetes +
+       mutate(risk_sum = heart_cond + hypertension + diabetes +
             cancer + hepatic_dis+ hepatitus+ asthma+
             high_cholesterol + ever_smoked + bmi) %>%
-    mutate(over60_plus_risk = ifelse(risk_sum >= 1, 1, 0)) %>%
-      select(-risk_sum)
+      mutate(risk_sum_noBMI = heart_cond + hypertension + diabetes +
+           cancer + hepatic_dis+ hepatitus+ asthma+
+           high_cholesterol + ever_smoked) %>%
+   mutate(over60_plus_risk = ifelse(risk_sum >= 1 & over60 ==1 , 1, 0)) %>%
+   mutate(over60_plus_risk_n0BMI = ifelse(risk_sum_noBMI >= 1 & over60 ==1 , 1, 0)) %>%
+   mutate(any_risk = ifelse(risk_sum >= 1, 1, 0))  %>%
+   mutate(any_risk_noBMI = ifelse(risk_sum_noBMI >= 1, 1, 0))  %>%
+   select(-c(risk_sum, risk_sum_noBMI))
 
 
 colnames(nhis_2018)[9:length(colnames(nhis_2018))]<-paste0("risk.",colnames(nhis_2018)[9:length(colnames(nhis_2018))])
@@ -53,6 +59,8 @@ nhis_2018_final <- nhis_2018_final %>%
 
 
 write.csv(nhis_2018_final, "outputs/nhis_2018_final.csv")
+
+write.csv(nhis_2018_final, "outputs/nhis_2018_final_noBMI.csv")
 
 ######### TEST ###############
 
