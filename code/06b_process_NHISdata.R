@@ -25,6 +25,7 @@ colnames(nhis_2016)[9:length(colnames(nhis_2016))]<-paste0("risk.",colnames(nhis
 
 write.csv(nhis_2016, "outputs/nhis_2016_raw.csv")   #this gets things in the right formart and I don't know why, need to fix
 nhis_2016 <- read.csv("outputs/nhis_2016_raw.csv")    #same here
+nyears <- length(unique(nhis_2016$year))
 
 nhis_2016_occ <- nhis_2016 %>%
   select(year, region, ind, occ, sampweight) %>%
@@ -35,7 +36,7 @@ nhis_2016_occ <- nhis_2016 %>%
   mutate(num_samp_ind = n)  %>%
   select(-n) %>%
   group_by(region,ind,occ) %>%
-  summarize(n_average_ind = mean(num_samp_ind), ppl_average_ind = mean(people_ind)) %>%
+  summarize(n_average_ind = sum(num_samp_ind)/nyears, ppl_average_ind = sum(people_ind)/nyears) %>%
   mutate(reg.ind.occ = paste(region, ind, occ, sep = "."))
 
 nhis_2016_risk <- nhis_2016 %>%
@@ -48,7 +49,7 @@ nhis_2016_risk <- nhis_2016 %>%
   mutate(num_samp_ind_risk = n)  %>%
   select(-n) %>%
   group_by(region,ind,occ,risk.factor) %>%
-  summarize(n_average_risk = mean(num_samp_ind_risk), ppl_average_risk = mean(people_ind_risk)) %>%
+  summarize(n_average_risk = sum(num_samp_ind_risk)/nyears, ppl_average_risk = sum(people_ind_risk)/nyears) %>%
   mutate(reg.ind.occ = paste(region, ind, occ, sep = "."))
 
 
